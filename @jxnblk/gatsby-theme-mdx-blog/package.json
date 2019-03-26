@@ -1,0 +1,45 @@
+{
+  "name": "@jxnblk/gatsby-theme-mdx-blog",
+  "version": "0.0.1",
+  "description": "Hyperminimal Gatsby theme for building blogs with MDX",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf node_modules .cache public",
+    "start": "gatsby develop",
+    "build": "gatsby build"
+  },
+  "keywords": [],
+  "author": "Brent Jackson <jxnblk@gmail.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "gatsby": "^2.3.1",
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.10",
+    "@emotion/styled": "^10.0.10",
+    "@mdx-js/mdx": "^1.0.0-alpha.9",
+    "@mdx-js/tag": "^1.0.0-alpha.6",
+    "debug": "^4.1.1",
+    "emotion-mdx": "^1.0.0-0",
+    "emotion-theming": "^10.0.10",
+    "gatsby-mdx": "^0.5.2",
+    "gatsby-plugin-compile-es6-packages": "^1.0.6",
+    "gatsby-plugin-emotion": "^4.0.6",
+    "gatsby-plugin-feed": "^2.1.0",
+    "gatsby-plugin-react-helmet": "^3.0.11",
+    "gatsby-source-filesystem": "^2.0.28",
+    "lodash.get": "^4.4.2",
+    "lodash.omit": "^4.5.0",
+    "lodash.pick": "^4.4.0",
+    "mkdirp": "^0.5.1",
+    "react-helmet": "^5.2.0",
+    "styled-system": "^4.0.8"
+  },
+  "devDependencies": {
+    "gatsby": "^2.3.2",
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "scripts": {
+    "clean": "yarn workspaces run clean",
+    "start": "yarn workspace example start",
+    "build": "yarn workspace example build"
+  },
+  "workspaces": [
+    "@jxnblk/gatsby-theme-mdx-blog",
+    "example"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf node_modules .cache public",
+    "start": "gatsby develop",
+    "build": "gatsby build"
+  },
+  "keywords": [],
+  "author": "Brent Jackson <jxnblk@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@jxnblk/gatsby-theme-mdx-blog": "^0.0.1",
+    "gatsby": "^2.3.2",
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5"
+  }
+}
