@@ -1,11 +1,12 @@
 import React from 'react'
 import { ComponentProvider } from 'emotion-mdx'
 import { Global } from '@emotion/core'
+import transform from '@styled-system/css'
 import components from './components'
 import colors from './colors'
 import typography from './typography'
 import styles from './styles'
-import transform from './system'
+// import transform from './system'
 
 const theme = {
   ...typography,

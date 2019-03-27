@@ -82,10 +82,17 @@ exports.createPages = async ({
   Array.from({ length }).forEach((_, i) => {
     const previousIndex = i
     const nextIndex = i + 2
-    const previous = i > 0 && (previousIndex === 1 ? `/${name}` : `/${name}/${previousIndex}`)
-    const next = nextIndex <= length && `/${name}/${nextIndex}`
+    const previous = (i > 0) && (
+      previousIndex === 1
+        ? path.join('/', name)
+        : path.join('/', name, previousIndex + '')
+    )
+
+    // const next = nextIndex <= length && `/${name}/${nextIndex}`
+    const next = nextIndex <= length && path.join('/', name, nextIndex + '')
     actions.createPage({
-      path: i === 0 ? `/${name}` : `/${name}/${i + 1}`,
+      // path: i === 0 ? `/${name}` : `/${name}/${i + 1}`,
+      path: i === 0 ? '/' + name : path.join('/', name, (i + 1) + ''),
       component: require.resolve('./src/templates/index.js'),
       context: {
         previous,
