@@ -27,10 +27,13 @@ export default props => {
           alignItems: 'center',
         }}>
         <Styled.h3 my={0}>
-          <Link to='/blog'>
-            Custom Blog Header
-          </Link>
+          <Styled.a as={Link} to='/'>
+            Custom Header
+          </Styled.a>
         </Styled.h3>
+        <Styled.a as={Link} to='/blog'>
+          Blog
+        </Styled.a>
         <Styled.Box mx='auto' />
         <button
           onClick={e => {

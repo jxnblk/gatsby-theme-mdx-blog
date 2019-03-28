@@ -59,6 +59,7 @@ export default {
     color: 'secondary',
     bg: 'muted',
     borderRadius: 4,
+    overflowX: 'auto',
   },
   code: {
     fontFamily: 'monospace',

@@ -1,8 +1,9 @@
-
 // imports seem to be broken
-// import * as gtmdx from '@jxnblk/gatsby-theme-mdx-blog'
+// import { colors } from '@jxnblk/gatsby-theme-mdx-blog'
 
 import colors from '@jxnblk/gatsby-theme-mdx-blog/src/colors'
+
+console.log(colors)
 
 // Colors for the theme can be configured by shadowing this file
 export default {

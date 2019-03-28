@@ -1,12 +1,10 @@
-import React, {
-  useState
-} from 'react'
+import React from 'react'
 import { ComponentProvider } from 'emotion-mdx'
 import { Global } from '@emotion/core'
 import transform from '@styled-system/css'
 import merge from 'lodash.merge'
 import get from 'lodash.get'
-import { ThemeContext } from './context'
+import { useTheme } from './context'
 import components from './components'
 import colors from './colors'
 import typography from './typography'
@@ -31,23 +29,17 @@ const reset = (
 )
 
 export default props => {
-  const [ mode, setMode ] = useState('normal')
-  const context = {
-    mode,
-    setMode
-  }
+  const { mode } = useTheme()
   const theme = getTheme(mode)
 
   return (
-    <ThemeContext.Provider value={context}>
-      <ComponentProvider
-        components={components}
-        transform={transform}
-        theme={theme}
-        styles={styles}>
-        {reset}
-        {props.children}
-      </ComponentProvider>
-    </ThemeContext.Provider>
+    <ComponentProvider
+      components={components}
+      transform={transform}
+      theme={theme}
+      styles={styles}>
+      {reset}
+      {props.children}
+    </ComponentProvider>
   )
 }
