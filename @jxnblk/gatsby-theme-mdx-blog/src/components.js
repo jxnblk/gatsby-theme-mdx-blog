@@ -1,9 +1,10 @@
 import styled from '@emotion/styled'
-import system from './system'
+import css from '@styled-system/css'
 
 const Layout = styled.div(
-  system({
+  css({
     fontFamily: 'body',
+    fontWeight: 'body',
     lineHeight: 'body',
     minHeight: '100vh',
     color: 'text',
@@ -12,13 +13,13 @@ const Layout = styled.div(
 )
 
 const Container = styled.div(
-  system({
+  css({
     p: 4,
     mx: 'auto',
   })
 )
 
-const Box = styled.div(system())
+const Box = styled.div(css())
 
 export default {
   Box,

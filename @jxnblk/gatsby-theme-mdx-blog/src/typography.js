@@ -6,6 +6,11 @@ export default {
   },
   lineHeights: {
     body: 1.5,
-    heading: 1.5,
+    heading: 1.25,
+  },
+  fontWeights: {
+    body: 400,
+    heading: 700,
+    bold: 700,
   },
 }

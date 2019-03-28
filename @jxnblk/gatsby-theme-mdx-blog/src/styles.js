@@ -3,24 +3,45 @@ export default {
     maxWidth: 1024,
   },
   h1: {
+    fontFamily: 'heading',
+    fontWeight: 'heading',
+    lineHeight: 'heading',
     fontSize: 6,
-    lineHeight: 1.25,
     m: 0,
   },
   h2: {
+    fontFamily: 'heading',
+    fontWeight: 'heading',
+    lineHeight: 'heading',
     fontSize: [4, 5],
-    lineHeight: 1.25,
     m: 0,
   },
   h3: {
+    fontFamily: 'heading',
+    fontWeight: 'heading',
+    lineHeight: 'heading',
     fontSize: 3,
-    lineHeight: 1.25,
     mt: 3,
     mb: 2,
   },
   h4: {
+    fontFamily: 'heading',
+    fontWeight: 'heading',
+    lineHeight: 'heading',
     fontSize: 2,
     m: 0,
+  },
+  h5: {
+    fontFamily: 'heading',
+    fontWeight: 'heading',
+    lineHeight: 'heading',
+    fontSize: 1,
+  },
+  h6: {
+    fontFamily: 'heading',
+    fontWeight: 'heading',
+    lineHeight: 'heading',
+    fontSize: 0,
   },
   p: {
     m: 0,
@@ -45,5 +66,8 @@ export default {
   inlineCode: {
     fontFamily: 'monospace',
     color: 'secondary',
+  },
+  strong: {
+    fontWeight: 'bold',
   },
 }

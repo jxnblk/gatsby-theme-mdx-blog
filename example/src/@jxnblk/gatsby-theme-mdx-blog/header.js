@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import {
   useTheme,
   useComponents
@@ -7,6 +8,7 @@ import {
 const modes = [
   'normal',
   'dark',
+  'book',
 ]
 const cycle = (arr, item) => {
   const i = (arr.indexOf(item) + 1) % arr.length
@@ -25,7 +27,9 @@ export default props => {
           alignItems: 'center',
         }}>
         <Styled.h3 my={0}>
-          Custom Blog Header
+          <Link to='/blog'>
+            Custom Blog Header
+          </Link>
         </Styled.h3>
         <Styled.Box mx='auto' />
         <button

@@ -3455,10 +3455,10 @@ emojis-list@^2.0.0:
   resolved "https://registry.yarnpkg.com/emojis-list/-/emojis-list-2.1.0.tgz#4daa4d9db00f9819880c79fa457ae5b09a1fd389"
   integrity sha1-TapNnbAPmBmIDHn6RXrlsJof04k=
 
-emotion-mdx@^1.0.0-0:
-  version "1.0.0-0"
-  resolved "https://registry.yarnpkg.com/emotion-mdx/-/emotion-mdx-1.0.0-0.tgz#631eeecefd0cf64e200fd684263ecfa9cf9e605d"
-  integrity sha512-03RqINHYdW20QfW/74F/7EyArQkp+qIL0psSG1MUKxR7O/q2No5bOPJwVTPQnezEOQJvdzR8HfjdzGhRpKbrmA==
+emotion-mdx@^1.0.0-1:
+  version "1.0.0-1"
+  resolved "https://registry.yarnpkg.com/emotion-mdx/-/emotion-mdx-1.0.0-1.tgz#ed6d47c2b01c647984aac37aa0b95b68153f50ca"
+  integrity sha512-Etlbei11QhQ+cYIY7DxVJamzWjLztfRp5VmvcnteaGL09eBrhr8MPjul/t6PTpaMbxrFwIf7RpK2Rw3yqpj7aw==
   dependencies:
     lodash.merge "^4.6.1"
 
