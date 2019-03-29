@@ -7,9 +7,6 @@ const heading = {
 }
 
 export default {
-  Container: {
-    maxWidth: 1024,
-  },
   h1: {
     ...heading,
     fontSize: 6,

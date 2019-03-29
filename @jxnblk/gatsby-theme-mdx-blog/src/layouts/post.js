@@ -3,18 +3,20 @@ import { useComponents } from 'emotion-mdx'
 import Head from '../head'
 import Header from '../header'
 import Footer from '../footer'
+import Layout from '../layout'
+import Container from '../container'
 
 export default props => {
   const Styled = useComponents()
 
   return (
-    <Styled.Layout>
+    <Layout>
       <Head
         title={props.title}
         description={props.excerpt}
       />
       <Header />
-      <Styled.Container>
+      <Container>
         <Styled.h1>
           {props.title}
         </Styled.h1>
@@ -24,8 +26,8 @@ export default props => {
           </Styled.strong>
         </Styled.p>
         {props.children}
-      </Styled.Container>
+      </Container>
       <Footer />
-    </Styled.Layout>
+    </Layout>
   )
 }

@@ -9,10 +9,12 @@ import components from './components'
 import colors from './colors'
 import typography from './typography'
 import styles from './styles'
+import blocks from './blocks'
 
 const getTheme = mode => merge({}, {
   ...typography,
   colors,
+  blocks,
 }, {
   colors: get(colors.modes, mode, colors)
 })

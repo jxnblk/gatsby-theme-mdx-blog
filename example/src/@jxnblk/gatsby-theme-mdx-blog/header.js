@@ -2,7 +2,9 @@ import React from 'react'
 import { Link } from 'gatsby'
 import {
   useTheme,
-  useComponents
+  useComponents,
+  Container,
+  Box,
 } from '@jxnblk/gatsby-theme-mdx-blog'
 
 const modes = [
@@ -30,7 +32,7 @@ export default props => {
 
   return (
     <header>
-      <Styled.Container
+      <Container
         css={{
           display: 'flex',
           alignItems: 'center',
@@ -40,11 +42,11 @@ export default props => {
             Custom Header
           </Styled.a>
         </Styled.h3>
-        <Styled.Box mx={2} />
+        <Box mx={2} />
         <Styled.a as={Link} to='/blog'>
           Blog
         </Styled.a>
-        <Styled.Box mx='auto' />
+        <Box mx='auto' />
         <button
           css={{
             appearance: 'none',
@@ -61,7 +63,7 @@ export default props => {
           }}>
           {mode}
         </button>
-    </Styled.Container>
+      </Container>
     </header>
   )
 }

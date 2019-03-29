@@ -1,19 +1,18 @@
 import React from 'react'
 import {
   ComponentProvider,
-  useComponents
+  Layout,
+  Container,
+  Header,
 } from '@jxnblk/gatsby-theme-mdx-blog'
 
-const Root = props => {
-  const Styled = useComponents()
-  return (
-    <Styled.Layout>
-      <Styled.Container>
-        {props.children}
-      </Styled.Container>
-    </Styled.Layout>
-  )
-}
+const Root = props =>
+  <Layout>
+    <Header />
+    <Container>
+      {props.children}
+    </Container>
+  </Layout>
 
 export default props =>
   <ComponentProvider>

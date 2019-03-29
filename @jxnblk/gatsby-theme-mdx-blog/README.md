@@ -70,6 +70,9 @@ Color modes can be added to a site to dynamically switch between custom color sc
 
 - `useTheme`
 - `Styled`
+- `Box`
+- `Layout`
+- `Container`
 
 ## Options
 

@@ -1,13 +1,15 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { useComponents } from 'emotion-mdx'
+import Box from './box'
+import Container from './container'
 
 export default props => {
   const Styled = useComponents()
 
   return (
-    <Styled.Box as='header'>
-      <Styled.Container>
+    <Box as='header' block='header'>
+      <Container>
         <Styled.h3 my={0}>
           <Link
             to='/'
@@ -19,7 +21,7 @@ export default props => {
             Minimal Blog
           </Link>
         </Styled.h3>
-      </Styled.Container>
-    </Styled.Box>
+      </Container>
+    </Box>
   )
 }

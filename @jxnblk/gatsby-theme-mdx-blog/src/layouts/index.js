@@ -4,6 +4,9 @@ import { useComponents } from 'emotion-mdx'
 import Head from '../head'
 import Header from '../header'
 import Footer from '../footer'
+import Box from '../box'
+import Layout from '../layout'
+import Container from '../container'
 
 export default props => {
   const {
@@ -13,10 +16,10 @@ export default props => {
   const Styled = useComponents()
 
   return (
-    <Styled.Layout>
+    <Layout>
       <Head />
       <Header />
-      <Styled.Container>
+      <Container>
         <ul
           css={{
             listStyle: 'none',
@@ -48,7 +51,7 @@ export default props => {
             </li>
           ))}
         </ul>
-        <Styled.Box
+        <Box
           css={{
             display: 'flex',
           }}
@@ -63,7 +66,7 @@ export default props => {
               Previous
             </Styled.a>
           )}
-          <Styled.Box m='auto' />
+          <Box m='auto' />
           {next && (
             <Styled.a
               as={Link}
@@ -74,9 +77,9 @@ export default props => {
               Next
             </Styled.a>
           )}
-        </Styled.Box>
-      </Styled.Container>
+        </Box>
+      </Container>
       <Footer />
-    </Styled.Layout>
+    </Layout>
   )
 }

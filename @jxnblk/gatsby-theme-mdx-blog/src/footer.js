@@ -1,14 +1,10 @@
 import React from 'react'
-import { useComponents } from 'emotion-mdx'
+import Box from './box'
+import Container from './container'
 
-export default props => {
-  const Styled = useComponents()
-
-  return (
-    <Styled.Box as='footer'>
-      <Styled.Container>
-        © 2019 Jxnblk
-      </Styled.Container>
-    </Styled.Box>
-  )
-}
+export default props =>
+  <Box as='footer' block='footer'>
+    <Container>
+      © 2019 Jxnblk
+    </Container>
+  </Box>
