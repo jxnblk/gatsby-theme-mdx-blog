@@ -31,13 +31,13 @@ const reset = (
 export default props => {
   const { mode } = useTheme()
   const theme = getTheme(mode)
+  theme.styles = styles
 
   return (
     <ComponentProvider
       components={components}
       transform={transform}
-      theme={theme}
-      styles={styles}>
+      theme={theme}>
       {reset}
       {props.children}
     </ComponentProvider>

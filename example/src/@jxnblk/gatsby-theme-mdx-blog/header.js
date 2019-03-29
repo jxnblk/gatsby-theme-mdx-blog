@@ -17,7 +17,16 @@ const cycle = (arr, item) => {
 
 export default props => {
   const { mode, setMode } = useTheme()
-  const Styled = useComponents()
+  const Styled = useComponents({
+    a: {
+      color: 'inherit',
+      textDecoration: 'none',
+      fontWeight: 'bold',
+      '&:hover': {
+        color: 'primary',
+      }
+    }
+  })
 
   return (
     <header>
@@ -26,16 +35,27 @@ export default props => {
           display: 'flex',
           alignItems: 'center',
         }}>
-        <Styled.h3 my={0}>
+        <Styled.h3 fontSize={2} my={0}>
           <Styled.a as={Link} to='/'>
             Custom Header
           </Styled.a>
         </Styled.h3>
+        <Styled.Box mx={2} />
         <Styled.a as={Link} to='/blog'>
           Blog
         </Styled.a>
         <Styled.Box mx='auto' />
         <button
+          css={{
+            appearance: 'none',
+            fontFamily: 'inherit',
+            fontWeight: 'bold',
+            fontSize: 'inherit',
+            padding: 12,
+            border: '1px solid',
+            color: 'inherit',
+            backgroundColor: 'transparent',
+          }}
           onClick={e => {
             setMode(cycle(modes, mode))
           }}>
