@@ -28,6 +28,7 @@ const Root = props => {
   }
 
   useEffect(() => {
+    // todo: handle null
     const initialMode = window.localStorage.getItem('mode')
     if (initialMode !== mode) {
       setMode(initialMode)
