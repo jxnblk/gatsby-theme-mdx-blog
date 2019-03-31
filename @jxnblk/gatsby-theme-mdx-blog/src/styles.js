@@ -42,6 +42,12 @@ export default {
       color: 'secondary',
     }
   },
+  hr: {
+    mt: 5,
+    mb: 5,
+    border: 0,
+    borderBottom: '1px solid',
+  },
   pre: {
     fontFamily: 'monospace',
     p: 3,
@@ -59,5 +65,33 @@ export default {
   },
   strong: {
     fontWeight: 'bold',
+  },
+  table: {
+    width: '100%',
+    my: 4,
+    borderCollapse: 'separate',
+    borderSpacing: 0,
+  },
+  th: {
+    textAlign: 'left',
+    verticalAlign: 'bottom',
+    paddingTop: '4px',
+    paddingBottom: '4px',
+    paddingRight: '4px',
+    paddingLeft: 0,
+    borderColor: 'inherit',
+    borderBottomWidth: '2px',
+    borderBottomStyle: 'solid'
+  },
+  td: {
+    textAlign: 'left',
+    verticalAlign: 'top',
+    paddingTop: '4px',
+    paddingBottom: '4px',
+    paddingRight: '4px',
+    paddingLeft: 0,
+    borderColor: 'inherit',
+    borderBottomWidth: '1px',
+    borderBottomStyle: 'solid'
   },
 }
