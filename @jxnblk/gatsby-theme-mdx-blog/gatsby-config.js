@@ -4,6 +4,7 @@ const remarkPlugins = [
   require('remark-slug'),
   require('remark-unwrap-images'),
 ]
+const feedOptions = require('./feed-options')
 
 module.exports = (opts = {}) => {
   const posts = opts.path || 'src/posts'
@@ -13,6 +14,7 @@ module.exports = (opts = {}) => {
       title: '@jxnblk/gatsby-theme-mdx-blog',
       description: 'Hyperminimal Gatsby theme for building blogs with MDX',
       author: 'Brent Jackson',
+      siteUrl: 'http://example.com',
     },
     plugins: [
       {
@@ -30,6 +32,10 @@ module.exports = (opts = {}) => {
           name: 'posts',
           path: path.resolve(posts),
         }
+      },
+      {
+        resolve: 'gatsby-plugin-feed',
+        options: feedOptions
       },
 
       {

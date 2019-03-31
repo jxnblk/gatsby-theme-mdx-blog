@@ -42,6 +42,10 @@ export default {
       color: 'secondary',
     }
   },
+  img: {
+    maxWidth: '100%',
+    height: 'auto',
+  },
   hr: {
     mt: 5,
     mb: 5,
