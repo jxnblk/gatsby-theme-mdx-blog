@@ -1,5 +1,9 @@
 const path = require('path')
 const pkg = require('./package.json')
+const remarkPlugins = [
+  require('remark-slug'),
+  require('remark-unwrap-images'),
+]
 
 module.exports = (opts = {}) => {
   const posts = opts.path || 'src/posts'
@@ -15,6 +19,7 @@ module.exports = (opts = {}) => {
         resolve: 'gatsby-mdx',
         options: {
           extensions: [ '.mdx', '.md' ],
+          remarkPlugins,
         }
       },
       'gatsby-plugin-react-helmet',

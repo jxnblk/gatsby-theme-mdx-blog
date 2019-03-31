@@ -39,6 +39,8 @@
     "lodash.pick": "^4.4.0",
     "mkdirp": "^0.5.1",
     "react-helmet": "^5.2.0",
+    "remark-slug": "^5.1.1",
+    "remark-unwrap-images": "^0.2.0",
     "styled-system": "^4.0.8"
   },
   "devDependencies": {
