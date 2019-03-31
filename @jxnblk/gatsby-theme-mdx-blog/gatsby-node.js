@@ -107,14 +107,14 @@ exports.createPages = async ({
   Array.from({ length }).forEach((_, i) => {
     const previousIndex = i
     const nextIndex = i + 2
-    const previous = (i > 0) && (
+    const previous = (i > 0) ? (
       previousIndex === 1
         ? path.join('/', name)
         : path.join('/', name, previousIndex + '')
-    )
+    ) : ''
 
     // const next = nextIndex <= length && `/${name}/${nextIndex}`
-    const next = nextIndex <= length && path.join('/', name, nextIndex + '')
+    const next = nextIndex <= length ? path.join('/', name, nextIndex + '') : ''
     actions.createPage({
       // path: i === 0 ? `/${name}` : `/${name}/${i + 1}`,
       path: i === 0 ? '/' + name : path.join('/', name, (i + 1) + ''),
