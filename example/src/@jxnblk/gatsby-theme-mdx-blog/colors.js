@@ -1,9 +1,8 @@
 // imports seem to be broken
 // import { colors } from '@jxnblk/gatsby-theme-mdx-blog'
+// console.log(colors)
 
 import colors from '@jxnblk/gatsby-theme-mdx-blog/src/colors'
-
-// console.log(colors)
 
 // Colors for the theme can be configured by shadowing this file
 export default {
@@ -18,9 +17,4 @@ export default {
       muted: '#f0f0e6',
     }
   }
-  // text: 'tomato',
-  // background: '#f6f6ff',
-  // primary: 'black',
-  // secondary: 'navy',
-  // muted: '#eee',
 }

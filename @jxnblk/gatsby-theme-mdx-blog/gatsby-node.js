@@ -20,7 +20,7 @@ exports.onCreateNode = ({ node, actions, getNode }, opts = {}) => {
   } = opts
   if (node.internal.type !== 'Mdx') return
 
-  const value = '/' + name + createFilePath({ node, getNode })
+  const value = path.join('/', name, createFilePath({ node, getNode }))
   actions.createNodeField({
     name: 'slug',
     node,
@@ -41,8 +41,6 @@ exports.createPages = async ({
     {
       allMdx(
         sort: { fields: [frontmatter___date], order: DESC }
-        limit: 1000
-        filter: { frontmatter: { draft: { ne: true } } }
       ) {
         edges {
           node {
@@ -76,8 +74,35 @@ exports.createPages = async ({
   })
 
   // pagination
+  const filtered = await graphql(`
+    {
+      allMdx(
+        sort: { fields: [frontmatter___date], order: DESC }
+        limit: 1000
+        filter: { frontmatter: { draft: { ne: true } } }
+      ) {
+        edges {
+          node {
+            id
+            fields {
+              slug
+            }
+            frontmatter {
+              date
+              draft
+            }
+          }
+        }
+      }
+    }
+  `)
+  if (filtered.errors) {
+    console.log(filtered.errors)
+    return
+  }
+  const index = filtered.data.allMdx.edges.map(edge => edge.node)
   const limit = pageSize
-  const length = Math.ceil(posts.length / limit)
+  const length = Math.ceil(index.length / limit)
 
   Array.from({ length }).forEach((_, i) => {
     const previousIndex = i

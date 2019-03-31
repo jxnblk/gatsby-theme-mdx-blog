@@ -36,11 +36,12 @@ export default props => {
                   color: 'inherit',
                 }}
               >
-                <Styled.h2>
+                <Styled.h2 fontSize={6}>
                   {post.title}
                 </Styled.h2>
                 <Styled.p
-                  mb={2}
+                  mb={4}
+                  fontWeight='bold'
                   fontSize={0}>
                   {post.date}
                 </Styled.p>

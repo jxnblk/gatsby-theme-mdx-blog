@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import css from '@styled-system/css'
 import {
   useTheme,
   useComponents,
@@ -8,9 +9,9 @@ import {
 } from '@jxnblk/gatsby-theme-mdx-blog'
 
 const modes = [
-  'normal',
+  'light',
   'dark',
-  'book',
+  // 'book',
 ]
 const cycle = (arr, item) => {
   const i = (arr.indexOf(item) + 1) % arr.length
@@ -48,16 +49,21 @@ export default props => {
         </Styled.a>
         <Box mx='auto' />
         <button
-          css={{
+          css={css({
             appearance: 'none',
             fontFamily: 'inherit',
             fontWeight: 'bold',
-            fontSize: 'inherit',
-            padding: 12,
-            border: '1px solid',
+            fontSize: 0,
+            textTransform: 'uppercase',
+            letterSpacing: '0.1em',
+            p: 12,
             color: 'inherit',
-            backgroundColor: 'transparent',
-          }}
+            bg: 'muted',
+            border: 0,
+            '&:focus': {
+              outline: '2px solid',
+            }
+          })}
           onClick={e => {
             setMode(cycle(modes, mode))
           }}>

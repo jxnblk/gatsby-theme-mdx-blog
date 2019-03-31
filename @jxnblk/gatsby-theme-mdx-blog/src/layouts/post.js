@@ -20,10 +20,10 @@ export default props => {
         <Styled.h1>
           {props.title}
         </Styled.h1>
-        <Styled.p fontSize={0}>
-          <Styled.strong>
-            {props.date}
-          </Styled.strong>
+        <Styled.p
+          fontSize={0}
+          fontWeight='bold'>
+          {props.date}
         </Styled.p>
         {props.children}
       </Container>

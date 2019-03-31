@@ -32,6 +32,7 @@ export default {
     fontSize: 0,
   },
   p: {
+    fontSize: [2, 3],
     m: 0,
     mb: 4,
   },

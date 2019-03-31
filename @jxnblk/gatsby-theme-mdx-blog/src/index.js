@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { ThemeContext } from './context'
 
 export { useComponents, Styled } from 'emotion-mdx'
@@ -20,11 +20,23 @@ export { default as Footer } from './footer'
 export { ThemeContext, useTheme } from './context'
 
 const Root = props => {
-  const [ mode, setMode ] = useState('normal')
+  const [ mode, setMode ] = useState('light')
   const context = {
     mode,
     setMode
   }
+
+  useEffect(() => {
+    const initialMode = window.localStorage.getItem('mode')
+    if (initialMode !== mode) {
+      setMode(initialMode)
+    }
+  }, [])
+
+  useEffect(() => {
+    window.localStorage.setItem('mode', mode)
+  }, [ mode ])
+
   return (
     <ThemeContext.Provider value={context}>
       {props.children}

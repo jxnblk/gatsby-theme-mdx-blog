@@ -9,7 +9,7 @@ export const Container = props =>
       p: 4,
       mx: 'auto',
       width: '100%',
-      maxWidth: 1024,
+      maxWidth: 832,
       flex: '1 1 auto',
     }}
   />
