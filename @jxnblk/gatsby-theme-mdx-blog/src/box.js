@@ -9,13 +9,11 @@ export const block = name => props => {
 }
 
 export const Box = styled('div', {
-  shouldForwardProp: prop =>
-    shouldForwardProp(prop) && prop !== 'cx'
-})({
+  shouldForwardProp
+})(css({
   boxSizing: 'border-box',
   minWidth: 0,
-},
-  props => css(props.cx)(props),
+}),
   props => block(props.block)(props),
   width
 )

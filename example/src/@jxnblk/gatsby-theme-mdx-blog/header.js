@@ -11,7 +11,6 @@ import {
 const modes = [
   'light',
   'dark',
-  // 'book',
 ]
 const cycle = (arr, item) => {
   const i = (arr.indexOf(item) + 1) % arr.length
@@ -20,6 +19,7 @@ const cycle = (arr, item) => {
 
 export default props => {
   const { mode, setMode } = useTheme()
+  if (!mode) setMode('light')
   const Styled = useComponents({
     a: {
       color: 'inherit',

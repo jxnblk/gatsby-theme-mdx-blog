@@ -1,7 +1,7 @@
 import React from 'react'
 import { ComponentProvider } from 'emotion-mdx'
 import { Global } from '@emotion/core'
-import transform from '@styled-system/css'
+import css from '@styled-system/css'
 import merge from 'lodash.merge'
 import get from 'lodash.get'
 import { useTheme } from './context'
@@ -21,12 +21,14 @@ const getTheme = mode => merge({}, {
 
 const reset = (
   <Global
-    styles={{
+    styles={theme => css({
       '*': { boxSizing: 'border-box' },
       body: {
-        margin: 0
+        margin: 0,
+        color: 'text',
+        bg: 'background',
       }
-    }}
+    })(theme)}
   />
 )
 
@@ -38,7 +40,7 @@ export default props => {
   return (
     <ComponentProvider
       components={components}
-      transform={transform}
+      transform={css}
       theme={theme}>
       {reset}
       {props.children}

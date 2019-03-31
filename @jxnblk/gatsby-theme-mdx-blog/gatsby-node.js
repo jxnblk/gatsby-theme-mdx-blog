@@ -113,10 +113,8 @@ exports.createPages = async ({
         : path.join('/', name, previousIndex + '')
     ) : ''
 
-    // const next = nextIndex <= length && `/${name}/${nextIndex}`
     const next = nextIndex <= length ? path.join('/', name, nextIndex + '') : ''
     actions.createPage({
-      // path: i === 0 ? `/${name}` : `/${name}/${i + 1}`,
       path: i === 0 ? '/' + name : path.join('/', name, (i + 1) + ''),
       component: require.resolve('./src/templates/index.js'),
       context: {

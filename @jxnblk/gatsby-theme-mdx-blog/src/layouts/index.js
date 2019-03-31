@@ -36,7 +36,7 @@ export default props => {
                   color: 'inherit',
                 }}
               >
-                <Styled.h2 fontSize={6}>
+                <Styled.h2 fontSize={[5, 6]}>
                   {post.title}
                 </Styled.h2>
                 <Styled.p
@@ -63,6 +63,10 @@ export default props => {
               to={previous}
               fontSize={4}
               fontWeight='bold'
+              color='inherit'
+              css={{
+                textDecoration: 'none',
+              }}
             >
               Previous
             </Styled.a>
@@ -74,6 +78,10 @@ export default props => {
               to={next}
               fontSize={4}
               fontWeight='bold'
+              color='inherit'
+              css={{
+                textDecoration: 'none',
+              }}
             >
               Next
             </Styled.a>

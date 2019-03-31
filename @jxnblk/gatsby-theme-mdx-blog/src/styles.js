@@ -3,13 +3,13 @@ const heading = {
   fontWeight: 'heading',
   lineHeight: 'heading',
   mt: 4,
-  mb: 4,
+  mb: 3,
 }
 
 export default {
   h1: {
     ...heading,
-    fontSize: 6,
+    fontSize: [5, 6],
   },
   h2: {
     ...heading,
