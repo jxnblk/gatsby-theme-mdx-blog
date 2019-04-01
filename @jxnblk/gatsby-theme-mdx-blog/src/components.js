@@ -3,9 +3,9 @@ import React from 'react'
 const heading = Tag => ({ id, ...props }) => !id
   ? <Tag {...props} />
   : (
-    <Tag {...props}>
+    <Tag id={id} {...props}>
       <a
-        href={'#' + props.id}
+        href={'#' + id}
         css={{
           color: 'inherit',
           textDecoration: 'none',
