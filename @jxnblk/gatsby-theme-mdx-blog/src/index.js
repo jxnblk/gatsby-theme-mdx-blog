@@ -5,7 +5,7 @@ export { useComponents, Styled } from 'emotion-mdx'
 // config
 export { default as colors } from './colors'
 export { default as typography } from './typography'
-export { default as blocks } from './blocks'
+export { default as layout } from './layout'
 export { default as styles } from './styles'
 export { default as components } from './components'
 
@@ -20,7 +20,7 @@ export { default as Footer } from './footer'
 
 export { ThemeContext, useTheme } from './context'
 
-const Root = props => {
+const Provider = props => {
   const [ mode, setMode ] = useState('light')
   const context = {
     mode,
@@ -47,6 +47,6 @@ const Root = props => {
 }
 
 export const wrapRootElement = ({ element }) =>
-  <Root>
+  <Provider>
     {element}
-  </Root>
+  </Provider>

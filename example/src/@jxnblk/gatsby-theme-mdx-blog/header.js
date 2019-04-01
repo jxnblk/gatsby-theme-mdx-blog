@@ -32,7 +32,7 @@ export default props => {
   })
 
   return (
-    <header>
+    <Box as='header' block='header'>
       <Container
         css={{
           display: 'flex',
@@ -70,6 +70,6 @@ export default props => {
           {mode}
         </button>
       </Container>
-    </header>
+    </Box>
   )
 }

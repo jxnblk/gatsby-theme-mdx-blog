@@ -59,9 +59,7 @@ export default {
 }
 ```
 
-<!--
-### `blocks.js`
--->
+### `layout.js`
 
 ### `styles.js`
 ### `header.js`

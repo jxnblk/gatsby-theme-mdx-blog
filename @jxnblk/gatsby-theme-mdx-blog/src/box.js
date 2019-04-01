@@ -5,7 +5,7 @@ import shouldForwardProp from '@styled-system/should-forward-prop'
 
 export const block = name => props => {
   const theme = props.theme || props
-  return css(theme.blocks[name])({ theme })
+  return css(theme.layout[name])({ theme })
 }
 
 export const Box = styled('div', {
