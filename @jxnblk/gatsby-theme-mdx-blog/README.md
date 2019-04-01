@@ -85,7 +85,7 @@ export default {
 ### `styles.js`
 
 The `styles` object can be used to customize styles for all other elements used in the theme.
-[View `src/styles.js`](/src/styles.js) for reference.
+[View `src/styles.js`](src/styles.js) for reference.
 
 ```js
 // src/@jxnblk/gatsby-theme-mdx-blog/styles.js
@@ -160,7 +160,7 @@ View the component source at [`src/layouts/post.js`](src/layouts/post.js) for re
 
 ## Color Modes
 
-Color modes can be added to a site to dynamically switch between custom color schemes, such as a *dark mode*.
+Color modes can be added to a site to dynamically switch between custom color schemes, for example adding a *dark mode*.
 By default, this theme includes two color modes: a default light color scheme and a `dark` color scheme.
 To enable switching between color modes, shadow a component to add the toggle switch UI, usually the `header.js` component.
 Then, import the `useTheme` hook to manage the color mode state.
@@ -241,9 +241,39 @@ export default {
 - `Container`
 - `Button`
 
+<!--
+- `useComponents`
+- `colors`
+- `typography`
+- `layout`
+- `styles`
+- `components`
+- `ComponentProvider`
+- `Head`
+-->
+
 ## Options
 
-- `name`
-- `path`
-- `pageSize`
+The following options can be passed to the theme in your site's `gatsby-config.js` file.
 
+```js
+// gatsby-config.js
+module.exports = {
+  __experimentalThemes: [
+    {
+      resolve: '@jxnblk/gatsby-theme-mdx-blog',
+      options: {
+        name: 'writing',
+        path: 'src/content',
+        pageSize: 16,
+      }
+    }
+  ]
+}
+```
+
+- `name`: path for rendered pages in your site, default `'blog'`
+- `path`: path for source folder of MDX blog posts, default `src/posts`
+- `pageSize`: number of posts to display per page
+
+MIT License
