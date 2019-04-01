@@ -2,10 +2,10 @@ import React from 'react'
 import css from '@styled-system/css'
 import Box from './box'
 
-export const Layout = props =>
+export const Root = props =>
   <Box
     {...props}
-    block='layout'
+    block='root'
     css={css({
       fontFamily: 'body',
       fontWeight: 'body',
@@ -16,4 +16,4 @@ export const Layout = props =>
     })}
   />
 
-export default Layout
+export default Root

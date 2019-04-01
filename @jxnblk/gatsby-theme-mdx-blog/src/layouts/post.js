@@ -1,16 +1,16 @@
 import React from 'react'
 import { useComponents } from 'emotion-mdx'
 import Head from '../head'
+import Root from '../root'
 import Header from '../header'
 import Footer from '../footer'
-import Layout from '../layout'
 import Container from '../container'
 
 export default props => {
   const Styled = useComponents()
 
   return (
-    <Layout>
+    <Root>
       <Head
         title={props.title}
         description={props.excerpt}
@@ -28,6 +28,6 @@ export default props => {
         {props.children}
       </Container>
       <Footer />
-    </Layout>
+    </Root>
   )
 }

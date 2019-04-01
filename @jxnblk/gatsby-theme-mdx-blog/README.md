@@ -1,7 +1,10 @@
 
 # @jxnblk/gatsby-theme-mdx-blog
 
+**WIP**
 Hyperminimal Gatsby theme for building blogs with MDX
+
+Used in https://jxnblk.com/blog
 
 ```sh
 npm i @jxnblk/gatsby-theme-mdx-blog
@@ -56,6 +59,10 @@ export default {
 }
 ```
 
+<!--
+### `blocks.js`
+-->
+
 ### `styles.js`
 ### `header.js`
 ### `footer.js`
@@ -71,7 +78,9 @@ Color modes can be added to a site to dynamically switch between custom color sc
 - `useTheme`
 - `Styled`
 - `Box`
-- `Layout`
+- `Root`
+- `Header`
+- `Footer`
 - `Container`
 
 ## Options

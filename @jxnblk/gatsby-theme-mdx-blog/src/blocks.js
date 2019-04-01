@@ -1,5 +1,5 @@
 export default {
-  layout: {},
+  root: {},
   header: {},
   footer: {},
   container: {}

@@ -2,10 +2,10 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { useComponents } from 'emotion-mdx'
 import Head from '../head'
+import Box from '../box'
+import Root from '../Root'
 import Header from '../header'
 import Footer from '../footer'
-import Box from '../box'
-import Layout from '../layout'
 import Container from '../container'
 
 export default props => {
@@ -16,7 +16,7 @@ export default props => {
   const Styled = useComponents()
 
   return (
-    <Layout>
+    <Root>
       <Head />
       <Header />
       <Container>
@@ -89,6 +89,6 @@ export default props => {
         </Box>
       </Container>
       <Footer />
-    </Layout>
+    </Root>
   )
 }

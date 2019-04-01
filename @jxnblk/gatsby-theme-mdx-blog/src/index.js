@@ -11,7 +11,7 @@ export { default as components } from './components'
 
 export { default as ComponentProvider } from './provider'
 export { default as Box } from './box'
-export { default as Layout } from './layout'
+export { default as Root } from './root'
 export { default as Container } from './container'
 export { default as Button } from './button'
 export { default as Head } from './head'
