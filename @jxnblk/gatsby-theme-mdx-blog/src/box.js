@@ -14,6 +14,7 @@ export const Box = styled('div', {
   boxSizing: 'border-box',
   minWidth: 0,
 }),
+  props => css(props.defaultStyle)(props),
   props => block(props.block)(props),
   width
 )
