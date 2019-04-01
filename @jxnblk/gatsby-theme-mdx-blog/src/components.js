@@ -1,16 +1,19 @@
 import React from 'react'
 
-const heading = Tag => props =>
-<Tag {...props}>
-  <a
-    href={'#' + props.id}
-    css={{
-      color: 'inherit',
-      textDecoration: 'none',
-    }}>
-    {props.children}
-  </a>
-</Tag>
+const heading = Tag => ({ id, ...props }) => !id
+  ? <Tag {...props} />
+  : (
+    <Tag {...props}>
+      <a
+        href={'#' + props.id}
+        css={{
+          color: 'inherit',
+          textDecoration: 'none',
+        }}>
+        {props.children}
+      </a>
+    </Tag>
+  )
 
 export default {
   h2: heading('h2'),
