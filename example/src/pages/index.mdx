@@ -1,4 +1,5 @@
 import Readme from '@jxnblk/gatsby-theme-mdx-blog/README.md'
+import { Styled } from '@jxnblk/gatsby-theme-mdx-blog'
 import { Link } from 'gatsby'
 import Layout from '../layout'
 
@@ -6,6 +7,6 @@ export default Layout
 
 This is an example site built with `@jxnblk/gatsby-theme-mdx-blog`.
 
-View the **<Link to='/blog'>Blog</Link>** to see it in action or view the <Link to='/unstyled'>Unstyled page</Link> to see how styles are isolated from the global scope.
+View the **<Styled.a as={Link} to='/blog'>Blog</Styled.a>** to see it in action or view the <Styled.a as={Link} to='/unstyled'>Unstyled page</Styled.a> to see how styles are isolated from the global scope.
 
 <Readme />

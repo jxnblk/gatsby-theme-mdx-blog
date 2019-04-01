@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { useComponents } from 'emotion-mdx'
+import css from '@styled-system/css'
+import { Styled } from '../index'
 import Head from '../head'
 import Box from '../box'
 import Root from '../root'
@@ -13,7 +14,6 @@ export default props => {
     previous,
     next,
   } = props.pageContext
-  const Styled = useComponents()
 
   return (
     <Root>
@@ -36,13 +36,18 @@ export default props => {
                   color: 'inherit',
                 }}
               >
-                <Styled.h2 fontSize={[5, 6]}>
+                <Styled.h2
+                  css={css({
+                    fontSize: [5, 6]
+                  })}>
                   {post.title}
                 </Styled.h2>
                 <Styled.p
-                  mb={4}
-                  fontWeight='bold'
-                  fontSize={0}>
+                  css={css({
+                    mb: 4,
+                    fontSize: [0, 0],
+                    fontWeight: 'bold',
+                  })}>
                   {post.date}
                 </Styled.p>
                 <Styled.p>
@@ -61,13 +66,12 @@ export default props => {
             <Styled.a
               as={Link}
               to={previous}
-              fontSize={4}
-              fontWeight='bold'
-              color='inherit'
-              css={{
+              css={css({
+                fontSize: 4,
+                fontWeight: 'bold',
+                color: 'inherit',
                 textDecoration: 'none',
-              }}
-            >
+              })}>
               Previous
             </Styled.a>
           )}
@@ -76,13 +80,12 @@ export default props => {
             <Styled.a
               as={Link}
               to={next}
-              fontSize={4}
-              fontWeight='bold'
-              color='inherit'
-              css={{
+              css={css({
+                fontSize: 4,
+                fontWeight: 'bold',
+                color: 'inherit',
                 textDecoration: 'none',
-              }}
-            >
+              })}>
               Next
             </Styled.a>
           )}

@@ -232,16 +232,16 @@ export default {
 
 ## API
 
-- `useTheme`
-- `Styled`
-- `Box`
-- `Root`
-- `Header`
-- `Footer`
+- `useTheme`: React hook for using theme state
+- `Box`: layout primitive component built with Styled System
+- `Root`: styled layout component for wrapping other layout components
 - `Container`
 - `Button`
+- `Styled`
 
 <!--
+- `Header`:
+- `Footer`
 - `useComponents`
 - `colors`
 - `typography`

@@ -1,5 +1,6 @@
 import React from 'react'
-import { useComponents } from 'emotion-mdx'
+import css from '@styled-system/css'
+import { Styled } from '../index'
 import Head from '../head'
 import Root from '../root'
 import Header from '../header'
@@ -7,8 +8,6 @@ import Footer from '../footer'
 import Container from '../container'
 
 export default props => {
-  const Styled = useComponents()
-
   return (
     <Root>
       <Head
@@ -21,8 +20,10 @@ export default props => {
           {props.title}
         </Styled.h1>
         <Styled.p
-          fontSize={0}
-          fontWeight='bold'>
+          css={css({
+            fontSize: [0, 0],
+            fontWeight: 'bold',
+          })}>
           {props.date}
         </Styled.p>
         {props.children}

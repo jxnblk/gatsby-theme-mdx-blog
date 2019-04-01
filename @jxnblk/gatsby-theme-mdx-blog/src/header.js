@@ -1,16 +1,18 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { useComponents } from 'emotion-mdx'
+import css from '@styled-system/css'
+import { Styled } from './index'
 import Box from './box'
 import Container from './container'
 
 export default props => {
-  const Styled = useComponents()
-
   return (
     <Box as='header' block='header'>
       <Container>
-        <Styled.h3 my={0}>
+        <Styled.h3
+          css={css({
+            my: 0
+          })}>
           <Link
             to='/'
             css={{

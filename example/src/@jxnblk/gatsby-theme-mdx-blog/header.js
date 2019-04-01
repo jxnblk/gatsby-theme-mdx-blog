@@ -30,7 +30,11 @@ export default props => {
           display: 'flex',
           alignItems: 'center',
         }}>
-        <Styled.h3 fontSize={2} my={0}>
+        <Styled.h3
+          css={css({
+            fontSize: 2,
+            m: 0,
+          })}>
           <Styled.a as={Link} to='/'
             css={css({
               color: 'inherit',
@@ -44,7 +48,9 @@ export default props => {
           </Styled.a>
         </Styled.h3>
         <Box mx={2} />
-        <Styled.a as={Link} to='/blog'
+        <Styled.a
+          as={Link}
+          to='/blog'
           css={css({
             color: 'inherit',
             textDecoration: 'none',

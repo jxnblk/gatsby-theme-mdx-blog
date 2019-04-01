@@ -2,12 +2,11 @@ import React from 'react'
 import { Link } from 'gatsby'
 import {
   ComponentProvider,
-  useComponents,
+  Styled,
   Root
 } from '@jxnblk/gatsby-theme-mdx-blog'
 
 const Page = props => {
-  const Styled = useComponents()
   return (
     <Root>
       <Styled.h1>Beep</Styled.h1>
