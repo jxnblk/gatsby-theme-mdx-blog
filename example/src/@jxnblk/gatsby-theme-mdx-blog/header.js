@@ -3,33 +3,25 @@ import { Link } from 'gatsby'
 import css from '@styled-system/css'
 import {
   useTheme,
-  useComponents,
+  Styled,
   Container,
   Box,
+  Button,
 } from '@jxnblk/gatsby-theme-mdx-blog'
 
 const modes = [
   'light',
   'dark',
 ]
-const cycle = (arr, item) => {
-  const i = (arr.indexOf(item) + 1) % arr.length
-  return arr[i]
-}
 
 export default props => {
   const { mode, setMode } = useTheme()
   if (!mode) setMode('light')
-  const Styled = useComponents({
-    a: {
-      color: 'inherit',
-      textDecoration: 'none',
-      fontWeight: 'bold',
-      '&:hover': {
-        color: 'primary',
-      }
-    }
-  })
+
+  const cycle = () => {
+    const i = (modes.indexOf(mode) + 1) % modes.length
+    setMode(modes[i])
+  }
 
   return (
     <Box as='header' block='header'>
@@ -39,36 +31,34 @@ export default props => {
           alignItems: 'center',
         }}>
         <Styled.h3 fontSize={2} my={0}>
-          <Styled.a as={Link} to='/'>
+          <Styled.a as={Link} to='/'
+            css={css({
+              color: 'inherit',
+              textDecoration: 'none',
+              fontWeight: 'bold',
+              '&:hover': {
+                color: 'primary',
+              }
+            })}>
             Custom Header
           </Styled.a>
         </Styled.h3>
         <Box mx={2} />
-        <Styled.a as={Link} to='/blog'>
+        <Styled.a as={Link} to='/blog'
+          css={css({
+            color: 'inherit',
+            textDecoration: 'none',
+            fontWeight: 'bold',
+            '&:hover': {
+              color: 'primary',
+            }
+          })}>
           Blog
         </Styled.a>
         <Box mx='auto' />
-        <button
-          css={css({
-            appearance: 'none',
-            fontFamily: 'inherit',
-            fontWeight: 'bold',
-            fontSize: 0,
-            textTransform: 'uppercase',
-            letterSpacing: '0.1em',
-            p: 12,
-            color: 'inherit',
-            bg: 'muted',
-            border: 0,
-            '&:focus': {
-              outline: '2px solid',
-            }
-          })}
-          onClick={e => {
-            setMode(cycle(modes, mode))
-          }}>
+        <Button onClick={cycle}>
           {mode}
-        </button>
+        </Button>
       </Container>
     </Box>
   )
