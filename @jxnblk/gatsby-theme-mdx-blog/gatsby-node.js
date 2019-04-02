@@ -61,7 +61,9 @@ exports.createPages = async ({
     console.log(result.errors)
     return
   }
-  const posts = result.data.allMdx.edges.map(edge => edge.node)
+  const posts = result.data.allMdx.edges.filter(
+    ({ node }) => node.parent.sourceInstanceName === 'posts'
+  )
 
   posts.forEach(post => {
     actions.createPage({
