@@ -4,13 +4,15 @@ import Index from '../layouts/index'
 import Provider from '../provider'
 
 export default props => {
-  const posts = props.data.allMdx.edges.map(({ node }) => ({
-    id: node.id,
-    slug: node.fields.slug,
-    title: node.frontmatter.title,
-    date: node.frontmatter.date,
-    excerpt: node.excerpt,
-  }))
+  const posts = props.data.allMdx.edges
+    .filter(edge => edge.node.parent.sourceInstanceName === 'posts')
+    .map(({ node }) => ({
+      id: node.id,
+      slug: node.fields.slug,
+      title: node.frontmatter.title,
+      date: node.frontmatter.date,
+      excerpt: node.excerpt,
+    }))
 
   return (
     <Provider>
@@ -40,6 +42,11 @@ export const pageQuery = graphql`
           }
           fields {
             slug
+          }
+          parent {
+            ... on File {
+              sourceInstanceName
+            }
           }
         }
       }

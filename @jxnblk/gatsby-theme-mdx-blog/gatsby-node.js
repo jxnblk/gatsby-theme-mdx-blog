@@ -2,8 +2,9 @@ const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 const Debug = require('debug')
 const mkdirp = require('mkdirp')
+const pkg = require('./package.json')
 
-const debug = Debug('@jxnblk/gatsby-theme-mdx-blog')
+const debug = Debug(pkg.name)
 
 exports.onPreBootstrap = ({ store }) => {
   const { program } = store.getState()
@@ -25,6 +26,7 @@ exports.onCreateNode = ({ node, actions, getNode }, opts = {}) => {
     name: 'slug',
     node,
     value,
+    plugin: pkg.name,
   })
 }
 
@@ -52,6 +54,11 @@ exports.createPages = async ({
               date
               draft
             }
+            parent {
+              ... on File {
+                sourceInstanceName
+              }
+            }
           }
         }
       }
@@ -62,6 +69,7 @@ exports.createPages = async ({
     return
   }
   const posts = result.data.allMdx.edges.map(edge => edge.node)
+    .filter(node => node.parent.sourceInstanceName === 'posts')
 
   posts.forEach(post => {
     actions.createPage({
@@ -91,6 +99,11 @@ exports.createPages = async ({
               date
               draft
             }
+            parent {
+              ... on File {
+                sourceInstanceName
+              }
+            }
           }
         }
       }
@@ -101,6 +114,7 @@ exports.createPages = async ({
     return
   }
   const index = filtered.data.allMdx.edges.map(edge => edge.node)
+    .filter(node => node.parent.sourceInstanceName === 'posts')
   const limit = pageSize
   const length = Math.ceil(index.length / limit)
 
