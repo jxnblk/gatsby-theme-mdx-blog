@@ -20,8 +20,6 @@ exports.onCreateNode = ({ node, actions, getNode }, opts = {}) => {
     name = 'blog'
   } = opts
   if (node.internal.type !== 'Mdx') return
-  const parent = getNode(node.parent)
-  if (parent.sourceInstanceName !== 'posts') return
 
   const value = path.join('/', name, createFilePath({ node, getNode }))
   actions.createNodeField({
