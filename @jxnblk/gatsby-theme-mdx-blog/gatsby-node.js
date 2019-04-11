@@ -26,7 +26,6 @@ exports.onCreateNode = ({ node, actions, getNode }, opts = {}) => {
     name: 'slug',
     node,
     value,
-    plugin: pkg.name,
   })
 }
 
