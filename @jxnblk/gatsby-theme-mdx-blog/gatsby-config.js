@@ -7,7 +7,10 @@ const remarkPlugins = [
 const feedOptions = require('./feed-options')
 
 module.exports = (opts = {}) => {
-  const posts = opts.path || 'src/posts'
+  const {
+    path: posts = 'src/posts',
+    mdx = true,
+  } = opts
 
   return {
     siteMetadata: {
@@ -17,13 +20,13 @@ module.exports = (opts = {}) => {
       siteUrl: 'http://example.com',
     },
     plugins: [
-      {
+      mdx && ({
         resolve: 'gatsby-mdx',
         options: {
           extensions: [ '.mdx', '.md' ],
           remarkPlugins,
         }
-      },
+      }),
       'gatsby-plugin-react-helmet',
       'gatsby-plugin-emotion',
       {
@@ -54,6 +57,6 @@ module.exports = (opts = {}) => {
           ]
         }
       },
-    ]
+    ].filter(Boolean)
   }
 }
