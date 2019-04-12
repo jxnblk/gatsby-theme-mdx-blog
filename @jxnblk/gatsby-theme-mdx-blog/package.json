@@ -1,6 +1,6 @@
 {
   "name": "@jxnblk/gatsby-theme-mdx-blog",
-  "version": "0.0.14",
+  "version": "0.0.15-0",
   "description": "Hyperminimal Gatsby theme for building blogs with MDX",
   "main": "index.js",
   "scripts": {
@@ -19,15 +19,15 @@
   "dependencies": {
     "@emotion/core": "^10.0.10",
     "@emotion/styled": "^10.0.10",
-    "@mdx-js/mdx": "^1.0.0-alpha.17",
-    "@mdx-js/react": "^1.0.0-alpha.17",
-    "@mdx-js/tag": "1.0.0-alpha.6",
+    "@mdx-js/mdx": "^1.0.0",
+    "@mdx-js/react": "^1.0.0",
     "@styled-system/css": "^1.0.3",
     "@styled-system/should-forward-prop": "^1.0.0",
     "debug": "^4.1.1",
     "emotion-mdx": "^1.0.0-6",
     "emotion-theming": "^10.0.10",
-    "gatsby-mdx": "^0.5.5-ci.356",
+    "gatsby": "^2.3.22",
+    "gatsby-mdx": "^0.6.2",
     "gatsby-plugin-compile-es6-packages": "^1.0.6",
     "gatsby-plugin-emotion": "^4.0.6",
     "gatsby-plugin-feed": "^2.1.0",
