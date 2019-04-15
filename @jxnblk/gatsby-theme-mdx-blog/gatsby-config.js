@@ -54,6 +54,7 @@ module.exports = (opts = {}) => {
         options: {
           modules: [
             pkg.name,
+            'theme-ui',
           ]
         }
       },

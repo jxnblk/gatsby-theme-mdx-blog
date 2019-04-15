@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { ThemeContext } from './context'
 
-export { useComponents, Styled } from 'emotion-mdx'
+export { useComponents, Styled } from 'theme-ui'
 // config
 export { default as colors } from './colors'
 export { default as typography } from './typography'

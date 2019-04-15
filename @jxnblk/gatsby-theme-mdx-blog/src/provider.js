@@ -1,5 +1,5 @@
 import React from 'react'
-import { ComponentProvider } from 'emotion-mdx'
+import { ComponentProvider } from 'theme-ui'
 import { Global } from '@emotion/core'
 import css from '@styled-system/css'
 import merge from 'lodash.merge'
@@ -40,7 +40,6 @@ export default props => {
   return (
     <ComponentProvider
       components={components}
-      transform={css}
       theme={theme}>
       {reset}
       {props.children}
