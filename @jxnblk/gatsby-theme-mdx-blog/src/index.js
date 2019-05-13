@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useLayoutEffect } from 'react'
 import { ThemeContext } from './context'
 
 export { useComponents, Styled } from 'theme-ui'
@@ -27,7 +27,7 @@ const Provider = props => {
     setMode
   }
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     // todo: handle null
     const initialMode = window.localStorage.getItem('mode')
     if (initialMode !== mode) {
