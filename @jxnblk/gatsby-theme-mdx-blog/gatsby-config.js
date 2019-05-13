@@ -19,14 +19,10 @@ module.exports = (opts = {}) => {
       author: 'Brent Jackson',
       siteUrl: 'http://example.com',
     },
+    __experimentalThemes: [
+      mdx && '@jxnblk/gatsby-theme-mdx',
+    ].filter(Boolean),
     plugins: [
-      mdx && ({
-        resolve: 'gatsby-mdx',
-        options: {
-          extensions: [ '.mdx', '.md' ],
-          remarkPlugins,
-        }
-      }),
       'gatsby-plugin-react-helmet',
       'gatsby-plugin-emotion',
       {
@@ -48,7 +44,6 @@ module.exports = (opts = {}) => {
           path: path.join(__dirname, `src`, `pages`),
         },
       },
-
       {
         resolve: 'gatsby-plugin-compile-es6-packages',
         options: {
@@ -58,6 +53,6 @@ module.exports = (opts = {}) => {
           ]
         }
       },
-    ].filter(Boolean)
+    ]
   }
 }

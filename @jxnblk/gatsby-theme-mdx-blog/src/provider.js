@@ -10,6 +10,7 @@ import colors from './colors'
 import typography from './typography'
 import styles from './styles'
 import layout from './layout'
+import prism from './prism'
 
 const getTheme = mode => merge({}, {
   ...typography,
@@ -27,7 +28,8 @@ const reset = (
         margin: 0,
         color: 'text',
         bg: 'background',
-      }
+      },
+      ...prism,
     })(theme)}
   />
 )

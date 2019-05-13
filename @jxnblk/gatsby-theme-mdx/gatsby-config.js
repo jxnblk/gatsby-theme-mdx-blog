@@ -9,24 +9,6 @@ const gatsbyRemarkPlugins = [
   'gatsby-remark-prismjs',
 ]
 
-/*
-gatsbyRemarkPlugins: [
-  {
-    resolve: "gatsby-remark-images",
-    options: {
-      maxWidth: 1380,
-      linkImagesToOriginal: false
-    }
-  },
-  { resolve: "gatsby-remark-responsive-iframe" },
-  { resolve: "gatsby-remark-copy-linked-files" },
-  { resolve: "gatsby-remark-numbered-footnotes" },
-  { resolve: "gatsby-remark-smartypants" },
-  { resolve: "gatsby-remark-code-titles" },
-  { resolve: "gatsby-remark-prismjs" }
-]
-*/
-
 const IS_LOCAL = process.cwd() === __dirname
 
 const config = (opts = {}) => {
@@ -41,7 +23,6 @@ const config = (opts = {}) => {
         options: {
           extensions: [ '.mdx', '.md' ],
           gatsbyRemarkPlugins,
-          // remarkPlugins,
         }
       })
     ].filter(Boolean)

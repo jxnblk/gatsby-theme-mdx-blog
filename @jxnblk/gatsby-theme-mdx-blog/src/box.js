@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
 import css from '@styled-system/css'
-import { width } from 'styled-system'
+import { width, space, color } from 'styled-system'
 import shouldForwardProp from '@styled-system/should-forward-prop'
 
 export const block = name => props => {
@@ -16,7 +16,9 @@ export const Box = styled('div', {
 }),
   props => css(props.defaultStyle)(props),
   props => block(props.block)(props),
-  width
+  width,
+  space,
+  color
 )
 
 export default Box
