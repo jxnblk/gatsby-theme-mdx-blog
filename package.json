@@ -6,7 +6,7 @@
     "build": "yarn workspace example build"
   },
   "workspaces": [
-    "@jxnblk/gatsby-theme-mdx-blog",
+    "@jxnblk/*",
     "example"
   ]
 }
