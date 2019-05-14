@@ -1,7 +1,14 @@
 import React, { useState, useEffect, useLayoutEffect } from 'react'
 import { ThemeContext } from './context'
 
-export { useComponents, Styled } from 'theme-ui'
+export {
+  jsx,
+  css,
+  Styled,
+  Box,
+  Container,
+} from 'theme-ui'
+
 // config
 export { default as colors } from './colors'
 export { default as typography } from './typography'
@@ -9,10 +16,10 @@ export { default as layout } from './layout'
 export { default as styles } from './styles'
 export { default as components } from './components'
 
+export { default as ThemeProvider } from './provider'
 export { default as ComponentProvider } from './provider'
-export { default as Box } from './box'
 export { default as Root } from './root'
-export { default as Container } from './container'
+
 export { default as Button } from './button'
 export { default as Head } from './head'
 export { default as Header } from './header'
@@ -28,8 +35,7 @@ const Provider = props => {
   }
 
   useLayoutEffect(() => {
-    // todo: handle null
-    const initialMode = window.localStorage.getItem('mode')
+    const initialMode = window.localStorage.getItem('mode') || 'light'
     if (initialMode !== mode) {
       setMode(initialMode)
     }

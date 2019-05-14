@@ -21,7 +21,7 @@
     "@emotion/styled": "^10.0.10",
     "@mdx-js/mdx": "^1.0.0",
     "@mdx-js/react": "^1.0.0",
-    "@styled-system/css": "^1.0.3",
+    "@styled-system/css": "^2.0.1",
     "@styled-system/should-forward-prop": "^1.0.0",
     "debug": "^4.1.1",
     "emotion-theming": "^10.0.10",
@@ -41,7 +41,7 @@
     "remark-slug": "^5.1.1",
     "remark-unwrap-images": "^0.2.0",
     "styled-system": "^4.0.8",
-    "theme-ui": "^0.0.4"
+    "theme-ui": "^0.0.12"
   },
   "devDependencies": {
     "gatsby": "^2.3.2",

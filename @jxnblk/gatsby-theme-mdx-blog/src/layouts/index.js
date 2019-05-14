@@ -1,13 +1,10 @@
-import React from 'react'
+/** @jsx jsx */
+import { jsx, Styled, Box, Container } from 'theme-ui'
 import { Link } from 'gatsby'
-import css from '@styled-system/css'
-import { Styled } from '../index'
 import Head from '../head'
-import Box from '../box'
 import Root from '../root'
 import Header from '../header'
 import Footer from '../footer'
-import Container from '../container'
 
 export default props => {
   const {
@@ -37,17 +34,17 @@ export default props => {
                 }}
               >
                 <Styled.h2
-                  css={css({
+                  css={{
                     fontSize: [5, 6]
-                  })}>
+                  }}>
                   {post.title}
                 </Styled.h2>
                 <Styled.p
-                  css={css({
+                  css={{
                     mb: 4,
                     fontSize: [0, 0],
                     fontWeight: 'bold',
-                  })}>
+                  }}>
                   {post.date}
                 </Styled.p>
                 <Styled.p>
@@ -66,12 +63,12 @@ export default props => {
             <Styled.a
               as={Link}
               to={previous}
-              css={css({
+              css={{
                 fontSize: 4,
                 fontWeight: 'bold',
                 color: 'inherit',
                 textDecoration: 'none',
-              })}>
+              }}>
               Previous
             </Styled.a>
           )}
@@ -80,12 +77,12 @@ export default props => {
             <Styled.a
               as={Link}
               to={next}
-              css={css({
+              css={{
                 fontSize: 4,
                 fontWeight: 'bold',
                 color: 'inherit',
                 textDecoration: 'none',
-              })}>
+              }}>
               Next
             </Styled.a>
           )}

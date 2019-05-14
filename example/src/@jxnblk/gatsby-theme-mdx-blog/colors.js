@@ -1,7 +1,5 @@
 // imports seem to be broken
 // import { colors } from '@jxnblk/gatsby-theme-mdx-blog'
-// console.log(colors)
-
 import colors from '@jxnblk/gatsby-theme-mdx-blog/src/colors'
 import get from 'lodash.get'
 

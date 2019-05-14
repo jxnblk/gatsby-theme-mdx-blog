@@ -1,18 +1,15 @@
-import React from 'react'
+/** @jsx jsx */
 import { Link } from 'gatsby'
-import css from '@styled-system/css'
-import { Styled } from './index'
-import Box from './box'
-import Container from './container'
+import { jsx, css, Styled, Box, Container } from 'theme-ui'
 
 export default props => {
   return (
     <Box as='header' block='header'>
       <Container>
         <Styled.h3
-          css={css({
+          css={{
             my: 0
-          })}>
+          }}>
           <Link
             to='/'
             css={{

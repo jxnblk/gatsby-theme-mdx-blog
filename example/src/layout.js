@@ -1,17 +1,17 @@
 import React from 'react'
 import {
-  ComponentProvider,
+  ThemeProvider,
   Root,
   Container,
   Header,
 } from '@jxnblk/gatsby-theme-mdx-blog'
 
 export default props =>
-  <ComponentProvider>
+  <ThemeProvider>
     <Root>
       <Header />
       <Container>
         {props.children}
       </Container>
     </Root>
-  </ComponentProvider>
+  </ThemeProvider>

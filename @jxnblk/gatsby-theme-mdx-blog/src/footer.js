@@ -1,6 +1,5 @@
-import React from 'react'
-import Box from './box'
-import Container from './container'
+/** @jsx jsx */
+import { jsx, Box, Container } from 'theme-ui'
 
 export default props =>
   <Box as='footer' block='footer'>
