@@ -35,7 +35,14 @@ const reset = (
 export default props => {
   const { mode } = useTheme()
   const theme = getTheme(mode)
-  theme.styles = styles
+  theme.styles = {
+    ...styles,
+    // for backwards compat
+    Layout: layout.root,
+    Header: layout.header,
+    Footer: layout.footer,
+    Container: layout.container,
+  }
 
   return (
     <ThemeProvider

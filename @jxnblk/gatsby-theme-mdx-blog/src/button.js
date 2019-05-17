@@ -1,11 +1,11 @@
-/** @jsx jsx */
-import { jsx, Box } from 'theme-ui'
+import React from 'react'
+import { css, Box } from 'theme-ui'
 
 export default props =>
   <Box
     as='button'
     {...props}
-    css={{
+    css={css({
       appearance: 'none',
       fontFamily: 'inherit',
       fontWeight: 'bold',
@@ -19,5 +19,5 @@ export default props =>
       '&:focus': {
         outline: '2px solid',
       }
-    }}
+    })}
   />
