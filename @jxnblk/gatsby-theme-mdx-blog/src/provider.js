@@ -1,22 +1,19 @@
 import React from 'react'
-import { ComponentProvider } from 'theme-ui'
+import { ThemeProvider } from 'theme-ui'
 import { Global } from '@emotion/core'
-import css from '@styled-system/css'
+import { css } from 'theme-ui'
 import merge from 'lodash.merge'
-import get from 'lodash.get'
-import { useTheme } from './context'
 import components from './components'
 import colors from './colors'
 import typography from './typography'
 import styles from './styles'
 import layout from './layout'
 
-const getTheme = mode => merge({}, {
+const theme = merge({}, {
   ...typography,
   colors,
   layout,
-}, {
-  colors: get(colors.modes, mode, colors)
+  styles,
 })
 
 const reset = (
@@ -33,16 +30,12 @@ const reset = (
 )
 
 export default props => {
-  const { mode } = useTheme()
-  const theme = getTheme(mode)
-  theme.styles = styles
-
   return (
-    <ComponentProvider
+    <ThemeProvider
       components={components}
       theme={theme}>
       {reset}
       {props.children}
-    </ComponentProvider>
+    </ThemeProvider>
   )
 }
