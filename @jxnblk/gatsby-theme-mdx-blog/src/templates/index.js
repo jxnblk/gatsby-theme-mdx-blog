@@ -25,7 +25,7 @@ export default props => {
 }
 
 export const pageQuery = graphql`
-  query BlogIndex($skip: Int!, $limit: Int!) {
+  query ($skip: Int!, $limit: Int!) {
     allMdx(
       sort: { fields: [frontmatter___date], order: DESC }
       limit: $limit

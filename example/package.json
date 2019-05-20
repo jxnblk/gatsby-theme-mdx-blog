@@ -12,7 +12,7 @@
   "author": "Brent Jackson <jxnblk@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@jxnblk/gatsby-theme-mdx-blog": "*",
+    "@jxnblk/gatsby-theme-mdx-blog": "0.0.17-0",
     "gatsby": "^2.5.6",
     "react": "^16.8.5",
     "react-dom": "^16.8.5"
