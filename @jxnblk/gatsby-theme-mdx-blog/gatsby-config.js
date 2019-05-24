@@ -1,5 +1,4 @@
 const path = require('path')
-const pkg = require('./package.json')
 const remarkPlugins = [
   require('remark-slug'),
   require('remark-unwrap-images'),
@@ -45,14 +44,6 @@ module.exports = (opts = {}) => {
         resolve: 'gatsby-plugin-page-creator',
         options: {
           path: path.join(__dirname, `src`, `pages`),
-        }
-      },
-      {
-        resolve: 'gatsby-plugin-compile-es6-packages',
-        options: {
-          modules: [
-            pkg.name,
-          ]
         }
       },
     ].filter(Boolean)
