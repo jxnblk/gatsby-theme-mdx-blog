@@ -27,7 +27,7 @@
     "gatsby-plugin-emotion": "^4.0.6",
     "gatsby-plugin-feed": "^2.1.0",
     "gatsby-plugin-react-helmet": "^3.0.11",
-    "gatsby-plugin-theme-ui": "^0.0.16-4",
+    "gatsby-plugin-theme-ui": "^0.0.16-5",
     "gatsby-source-filesystem": "^2.0.28",
     "lodash.merge": "^4.6.1",
     "mkdirp": "^0.5.1",

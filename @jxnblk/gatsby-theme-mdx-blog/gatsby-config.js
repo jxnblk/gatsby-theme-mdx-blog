@@ -30,7 +30,8 @@ module.exports = (opts = {}) => {
         resolve: 'gatsby-plugin-theme-ui',
         options: {
           colorMode: 'light',
-          theme: require.resolve('./src/theme.js')
+          theme: require.resolve('./src/theme.js'),
+          components: require.resolve('./src/components.js'),
         }
       },
       'gatsby-plugin-react-helmet',

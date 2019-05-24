@@ -4545,10 +4545,10 @@ gatsby-plugin-react-helmet@^3.0.11:
   dependencies:
     "@babel/runtime" "^7.0.0"
 
-gatsby-plugin-theme-ui@^0.0.16-4:
-  version "0.0.16-4"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-theme-ui/-/gatsby-plugin-theme-ui-0.0.16-4.tgz#57dda818da4f4c8c52ea56eacbe4a2f67861c127"
-  integrity sha512-CSu1z/PSV4QJ9qqNK7KisDwQWCkuopa9DIoAQNxudnWd1Kl5eIx55qcVGlBj7/YdM/YcRvPDE706rgzQytydOw==
+gatsby-plugin-theme-ui@^0.0.16-5:
+  version "0.0.16-5"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-theme-ui/-/gatsby-plugin-theme-ui-0.0.16-5.tgz#4bfc5483f69c65f487456e8607e35d1895f5432a"
+  integrity sha512-FzNwFGRSKDL2jogoVSRR1sGgvvEFyOSoZhO0vAETFMU3pmiV6YRzQM7pH+9oWola/xIWVXk1MoVpsuw5oj9YNg==
   dependencies:
     loader-utils "^1.2.3"
     mkdirp "^0.5.1"

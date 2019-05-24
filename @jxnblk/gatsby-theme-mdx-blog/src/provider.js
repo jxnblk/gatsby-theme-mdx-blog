@@ -1,9 +1,6 @@
 import React from 'react'
 import { Global } from '@emotion/core'
 import { css } from 'theme-ui'
-import merge from 'lodash.merge'
-// todo...
-// import components from './components'
 
 const reset = (
   <Global
