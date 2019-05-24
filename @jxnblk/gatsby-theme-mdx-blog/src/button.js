@@ -1,6 +1,5 @@
 import React from 'react'
-import css from '@styled-system/css'
-import Box from './box'
+import { css, Box } from 'theme-ui'
 
 export default props =>
   <Box

@@ -24,7 +24,7 @@ export default props => {
   }
 
   return (
-    <Box as='header' block='header'>
+    <Box as='header' css={css({ variant: 'layout.header' })}>
       <Container
         css={{
           display: 'flex',

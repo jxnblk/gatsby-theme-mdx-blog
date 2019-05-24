@@ -1,17 +1,10 @@
 import React from 'react'
-import Box from './box'
+import { css, Container } from 'theme-ui'
 
-export const Container = props =>
-  <Box
+export default props =>
+  <Container
     {...props}
-    block='container'
-    defaultStyle={{
-      p: 4,
-      mx: 'auto',
-      width: '100%',
-      maxWidth: 832,
-      flex: '1 1 auto',
-    }}
+    css={css({
+      variant: 'layout.container'
+    })}
   />
-
-export default Container

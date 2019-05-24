@@ -27,7 +27,7 @@ export default props => {
 }
 
 export const pageQuery = graphql`
-  query BlogPostQuery($id: String!) {
+  query ($id: String!) {
     mdx(id: { eq: $id }) {
       id
       frontmatter {

@@ -1,18 +1,14 @@
 import React from 'react'
-import css from '@styled-system/css'
-import Box from './box'
+import { css, Layout } from 'theme-ui'
 
 export const Root = props =>
-  <Box
+  <Layout
     {...props}
-    block='root'
     css={css({
+      variant: 'layout.root',
       fontFamily: 'body',
       fontWeight: 'body',
       lineHeight: 'body',
-      minHeight: '100vh',
-      display: 'flex',
-      flexDirection: 'column',
     })}
   />
 
