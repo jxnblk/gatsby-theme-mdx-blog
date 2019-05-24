@@ -1,8 +1,5 @@
 import React from 'react'
-import {
-  ColorModeProvider,
-  useColorMode
-} from 'theme-ui'
+import { useColorMode } from 'theme-ui'
 
 export {
   css,
@@ -25,10 +22,10 @@ export { default as Head } from './head'
 export { default as Header } from './header'
 export { default as Footer } from './footer'
 
-export const wrapRootElement = ({ element }) =>
-  <ColorModeProvider initialColorMode='light'>
-    {element}
-  </ColorModeProvider>
+// export const wrapRootElement = ({ element }) =>
+//   <ColorModeProvider initialColorMode='light'>
+//     {element}
+//   </ColorModeProvider>
 
 // backwards compatibility
 export const useTheme = () => {
