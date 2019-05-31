@@ -239,19 +239,6 @@ export default {
 - `Button`
 - `Styled`
 
-<!--
-- `Header`:
-- `Footer`
-- `useComponents`
-- `colors`
-- `typography`
-- `layout`
-- `styles`
-- `components`
-- `ComponentProvider`
-- `Head`
--->
-
 ## Options
 
 The following options can be passed to the theme in your site's `gatsby-config.js` file.

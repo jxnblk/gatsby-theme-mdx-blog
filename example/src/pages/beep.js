@@ -21,6 +21,4 @@ const Page = props => {
 }
 
 export default props =>
-  <ComponentProvider>
-    <Page />
-  </ComponentProvider>
+  <Page />

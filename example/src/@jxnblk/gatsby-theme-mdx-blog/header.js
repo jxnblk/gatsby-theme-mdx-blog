@@ -2,12 +2,12 @@ import React from 'react'
 import { Link } from 'gatsby'
 import css from '@styled-system/css'
 import {
-  useTheme,
   Styled,
   Container,
   Box,
   Button,
 } from '@jxnblk/gatsby-theme-mdx-blog'
+import { useColorMode } from 'theme-ui'
 
 const modes = [
   'light',
@@ -15,8 +15,7 @@ const modes = [
 ]
 
 export default props => {
-  const { mode, setMode } = useTheme()
-  if (!mode) setMode('light')
+  const [ mode, setMode ] = useColorMode()
 
   const cycle = () => {
     const i = (modes.indexOf(mode) + 1) % modes.length
