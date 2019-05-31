@@ -4600,10 +4600,10 @@ gatsby-plugin-react-helmet@^3.0.11:
   dependencies:
     "@babel/runtime" "^7.0.0"
 
-gatsby-plugin-theme-ui@^0.0.17-alpha.0:
-  version "0.0.17-alpha.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-theme-ui/-/gatsby-plugin-theme-ui-0.0.17-alpha.0.tgz#cd26b8a2578eddc86bad2a1b4621f9ef22174500"
-  integrity sha512-R/ShF0iWkYlQ+fW9vo9zZroSLDgr2p/78nSGH64vOSa5G8Ss2FJWtVHOFbrXppIVHBHYGpm205w1iAwawUt2xQ==
+gatsby-plugin-theme-ui@^0.0.17-alpha.1:
+  version "0.0.17-alpha.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-theme-ui/-/gatsby-plugin-theme-ui-0.0.17-alpha.1.tgz#c3becbc8a9e51990f483cefecceeaf03cf8c0c71"
+  integrity sha512-+kcy+UQqVpbaP2EUGsmyQZJCIvwKxzS8+G5tafm2zhHDBfPMb21uOGi0vzAX4Omo76WDvR29aaDwVenYgCAKMA==
   dependencies:
     loader-utils "^1.2.3"
     lodash.merge "^4.6.1"
@@ -9934,10 +9934,10 @@ text-table@0.2.0, text-table@^0.2.0:
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
 
-theme-ui-typography@^0.0.17-alpha.0:
-  version "0.0.17-alpha.0"
-  resolved "https://registry.yarnpkg.com/theme-ui-typography/-/theme-ui-typography-0.0.17-alpha.0.tgz#1067ecbe7da0729f6672af8ada80ff36bc0e1632"
-  integrity sha512-cdWMS0GgBwMqvucOLelnZZ+DtZZ+h9tkjDXxL9mgLyQV1qjS9tEGltBpE9PfB5L+AaS64EiDgdK6Rt466Ngozw==
+theme-ui-typography@^0.0.17-alpha.1:
+  version "0.0.17-alpha.1"
+  resolved "https://registry.yarnpkg.com/theme-ui-typography/-/theme-ui-typography-0.0.17-alpha.1.tgz#6ea39b898fce68efafec40ace6f3d89352cc756a"
+  integrity sha512-3ORB2DEVrGzmqVRKTwwsEJNpHlNp2aW9x4BzvS+azh9UipBxJQyjFfkys1nqISKSkjMdgUsAl9UD6nUMp35clg==
   dependencies:
     compass-vertical-rhythm "^1.4.5"
     css-what "^2.1.3"
@@ -9946,10 +9946,10 @@ theme-ui-typography@^0.0.17-alpha.0:
     object-assign "^4.1.1"
     typography "^0.16.19"
 
-theme-ui@^0.0.17-alpha.0:
-  version "0.0.17-alpha.0"
-  resolved "https://registry.yarnpkg.com/theme-ui/-/theme-ui-0.0.17-alpha.0.tgz#94c2a2e0d70eb46f81edb2c216a96336909336ed"
-  integrity sha512-ECfEv1XZmhuSnQGqU6kRLZcbcuWNOPSrYts3o4g7Wtyy725jkP6DSr4BYxwsozczKhoUymx+cTRIop1X8F0MiQ==
+theme-ui@^0.0.17-alpha.1:
+  version "0.0.17-alpha.1"
+  resolved "https://registry.yarnpkg.com/theme-ui/-/theme-ui-0.0.17-alpha.1.tgz#fe20411d4e7dd88b57eb2cc9a03c0b26d0559eeb"
+  integrity sha512-qRLZKFtmx1aMIIiAvc8nyZEYO/PKnZX5IjPA0oujC4IsXoFccq9OBZPh8KMpVp+nkDsBA58D5fqZ6Wy9GxUNUg==
   dependencies:
     "@emotion/core" "^10.0.0"
     "@emotion/styled" "^10.0.0"
@@ -9960,7 +9960,7 @@ theme-ui@^0.0.17-alpha.0:
     lodash.merge "^4.6.0"
     react "^16.8.0"
     styled-system "^4.0.0"
-    theme-ui-typography "^0.0.17-alpha.0"
+    theme-ui-typography "^0.0.17-alpha.1"
 
 through2@^2.0.0, through2@^2.0.1:
   version "2.0.5"
