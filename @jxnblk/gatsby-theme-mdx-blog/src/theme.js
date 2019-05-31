@@ -7,6 +7,7 @@ import layout from './layout'
 
 export default merge({}, {
   ...typography,
+  initialColorMode: 'light',
   colors,
   layout,
   styles,

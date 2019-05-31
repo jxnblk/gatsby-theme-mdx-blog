@@ -26,14 +26,7 @@ module.exports = (opts = {}) => {
           remarkPlugins,
         }
       }),
-      {
-        resolve: 'gatsby-plugin-theme-ui',
-        options: {
-          colorMode: 'light',
-          theme: require.resolve('./src/theme.js'),
-          components: require.resolve('./src/components.js'),
-        }
-      },
+      'gatsby-plugin-theme-ui',
       'gatsby-plugin-react-helmet',
       'gatsby-plugin-emotion',
       {
