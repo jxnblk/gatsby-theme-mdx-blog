@@ -5,6 +5,7 @@ export {
   css,
   Styled,
   Box,
+  useColorMode,
 } from 'theme-ui'
 
 // config
@@ -20,3 +21,4 @@ export { default as Button } from './button'
 export { default as Head } from './head'
 export { default as Header } from './header'
 export { default as Footer } from './footer'
+

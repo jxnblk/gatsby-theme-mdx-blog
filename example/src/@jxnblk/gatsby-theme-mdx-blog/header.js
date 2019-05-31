@@ -6,8 +6,8 @@ import {
   Container,
   Box,
   Button,
+  useColorMode,
 } from '@jxnblk/gatsby-theme-mdx-blog'
-import { useColorMode } from 'theme-ui'
 
 const modes = [
   'light',
