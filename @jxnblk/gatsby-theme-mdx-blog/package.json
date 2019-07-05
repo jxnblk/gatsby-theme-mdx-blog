@@ -1,12 +1,12 @@
 {
   "name": "@jxnblk/gatsby-theme-mdx-blog",
-  "version": "0.0.17",
+  "version": "0.1.0-0",
   "description": "Hyperminimal Gatsby theme for building blogs with MDX",
   "main": "index.js",
   "scripts": {
-    "clean": "rm -rf node_modules .cache public",
     "start": "gatsby develop",
-    "build": "gatsby build"
+    "build": "gatsby build",
+    "clean": "gatsby clean"
   },
   "keywords": [],
   "author": "Brent Jackson <jxnblk@gmail.com>",
@@ -20,22 +20,20 @@
     "@emotion/core": "^10.0.0",
     "@mdx-js/mdx": "^1.0.0",
     "@mdx-js/react": "^1.0.0",
-    "@styled-system/should-forward-prop": "^1.0.0",
     "debug": "^4.1.1",
     "gatsby": "^2.13.1",
     "gatsby-plugin-emotion": "^4.0.6",
     "gatsby-plugin-feed": "^2.1.0",
     "gatsby-plugin-mdx": "^1.0.7",
     "gatsby-plugin-react-helmet": "^3.0.11",
-    "gatsby-plugin-theme-ui": "^0.2.5",
+    "gatsby-plugin-theme-ui": "^0.2.6",
     "gatsby-source-filesystem": "^2.0.28",
     "lodash.merge": "^4.6.1",
     "mkdirp": "^0.5.1",
     "react-helmet": "^5.2.0",
     "remark-slug": "^5.1.1",
     "remark-unwrap-images": "^0.2.0",
-    "styled-system": "^4.0.8",
-    "theme-ui": "^0.2.5"
+    "theme-ui": "^0.2.6"
   },
   "devDependencies": {
     "gatsby": "^2.3.2",

@@ -40,15 +40,6 @@ module.exports = (opts = {}) => {
         resolve: 'gatsby-plugin-feed',
         options: feedOptions
       },
-
-      /*
-      {
-        resolve: 'gatsby-plugin-page-creator',
-        options: {
-          path: path.join(__dirname, `src`, `pages`),
-        }
-      },
-      */
     ].filter(Boolean)
   }
 }
