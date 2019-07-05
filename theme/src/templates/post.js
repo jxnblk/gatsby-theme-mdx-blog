@@ -1,7 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
-import Provider from '../provider'
 import Post from '../layouts/post'
 
 export default props => {
@@ -11,18 +10,16 @@ export default props => {
     date,
     draft
   } = mdx.frontmatter
-  const children = <MDXRenderer children={mdx.code.body} />
+  const children = <MDXRenderer children={mdx.body} />
 
   return (
-    <Provider>
-      <Post
-        {...props}
-        title={title}
-        date={date}
-        draft={draft}
-        children={children}
-      />
-    </Provider>
+    <Post
+      {...props}
+      title={title}
+      date={date}
+      draft={draft}
+      children={children}
+    />
   )
 }
 

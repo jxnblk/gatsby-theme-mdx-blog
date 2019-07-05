@@ -1,7 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Index from '../layouts/index'
-import Provider from '../provider'
 
 export default props => {
   const posts = props.data.allMdx.edges
@@ -15,12 +14,10 @@ export default props => {
     }))
 
   return (
-    <Provider>
-      <Index
-        {...props}
-        posts={posts}
-      />
-    </Provider>
+    <Index
+      {...props}
+      posts={posts}
+    />
   )
 }
 

@@ -6,7 +6,7 @@
     "build": "yarn workspace example build"
   },
   "workspaces": [
-    "@jxnblk/*",
+    "theme",
     "example"
   ]
 }

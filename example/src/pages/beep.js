@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import {
-  ComponentProvider,
   Styled,
   Root
 } from '@jxnblk/gatsby-theme-mdx-blog'
@@ -20,7 +19,4 @@ const Page = props => {
   )
 }
 
-export default props =>
-  <ComponentProvider>
-    <Page />
-  </ComponentProvider>
+export default props => <Page />

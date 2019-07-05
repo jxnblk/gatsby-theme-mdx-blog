@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { css, Styled, Box, Main } from 'theme-ui'
-import Container from '../container'
+import { css, Styled, Container, Box, Main } from 'theme-ui'
 import Head from '../head'
 import Root from '../root'
 import Header from '../header'
