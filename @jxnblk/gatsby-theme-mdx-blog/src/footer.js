@@ -1,10 +1,9 @@
 import React from 'react'
-import { css, Box } from 'theme-ui'
-import Container from './container'
+import { Container } from 'theme-ui'
 
 export default props =>
-  <Box as='footer' css={css({ variant: 'layout.footer' })}>
+  <footer>
     <Container>
       © 2019 Jxnblk
     </Container>
-  </Box>
+  </footer>

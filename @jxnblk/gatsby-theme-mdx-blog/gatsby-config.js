@@ -20,12 +20,13 @@ module.exports = (opts = {}) => {
     },
     plugins: [
       mdx && ({
-        resolve: 'gatsby-mdx',
+        resolve: 'gatsby-plugin-mdx',
         options: {
           extensions: [ '.mdx', '.md' ],
           remarkPlugins,
         }
       }),
+      'gatsby-plugin-theme-ui',
       'gatsby-plugin-react-helmet',
       'gatsby-plugin-emotion',
       {
@@ -40,12 +41,14 @@ module.exports = (opts = {}) => {
         options: feedOptions
       },
 
+      /*
       {
         resolve: 'gatsby-plugin-page-creator',
         options: {
           path: path.join(__dirname, `src`, `pages`),
         }
       },
+      */
     ].filter(Boolean)
   }
 }

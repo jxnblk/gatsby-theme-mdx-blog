@@ -12,7 +12,7 @@
   "author": "Brent Jackson <jxnblk@gmail.com>",
   "license": "MIT",
   "peerDependencies": {
-    "gatsby": "^2.3.1",
+    "gatsby": "^2.13.1",
     "react": "^16.8.5",
     "react-dom": "^16.8.5"
   },
@@ -22,11 +22,12 @@
     "@mdx-js/react": "^1.0.0",
     "@styled-system/should-forward-prop": "^1.0.0",
     "debug": "^4.1.1",
-    "gatsby": "^2.5.6",
-    "gatsby-mdx": "^0.6.2",
+    "gatsby": "^2.13.1",
     "gatsby-plugin-emotion": "^4.0.6",
     "gatsby-plugin-feed": "^2.1.0",
+    "gatsby-plugin-mdx": "^1.0.7",
     "gatsby-plugin-react-helmet": "^3.0.11",
+    "gatsby-plugin-theme-ui": "^0.2.5",
     "gatsby-source-filesystem": "^2.0.28",
     "lodash.merge": "^4.6.1",
     "mkdirp": "^0.5.1",
@@ -34,7 +35,7 @@
     "remark-slug": "^5.1.1",
     "remark-unwrap-images": "^0.2.0",
     "styled-system": "^4.0.8",
-    "theme-ui": "^0.0.14"
+    "theme-ui": "^0.2.5"
   },
   "devDependencies": {
     "gatsby": "^2.3.2",

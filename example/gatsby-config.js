@@ -4,12 +4,7 @@ module.exports = {
     description: 'Demo site for @jxnblk/gatsby-theme-mdx-blog',
     siteUrl: 'https://jxnblk.com'
   },
-  __experimentalThemes: [
-    {
-      resolve: '@jxnblk/gatsby-theme-mdx-blog',
-      options: {
-        // name: '',
-      }
-    },
+  plugins: [
+    '@jxnblk/gatsby-theme-mdx-blog',
   ]
 }

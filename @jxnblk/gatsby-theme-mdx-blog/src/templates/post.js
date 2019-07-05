@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import MDXRenderer from 'gatsby-mdx/mdx-renderer'
+import { MDXRenderer } from 'gatsby-plugin-mdx'
 import Provider from '../provider'
 import Post from '../layouts/post'
 
@@ -35,9 +35,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         draft
       }
-      code {
-        body
-      }
+      body
     }
   }
 `

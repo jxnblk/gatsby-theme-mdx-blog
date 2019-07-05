@@ -11,30 +11,15 @@ export {
 } from 'theme-ui'
 
 // config
-export { default as colors } from './colors'
-export { default as typography } from './typography'
-export { default as layout } from './layout'
-export { default as styles } from './styles'
-export { default as components } from './components'
+export { default as colors } from './gatsby-plugin-theme-ui/colors'
+export { default as typography } from './gatsby-plugin-theme-ui/typography'
+export { default as layout } from './gatsby-plugin-theme-ui/layout'
+export { default as styles } from './gatsby-plugin-theme-ui/styles'
+export { default as components } from './gatsby-plugin-theme-ui/components'
 
-export { default as ThemeProvider } from './provider'
 export { default as Root } from './root'
 export { default as Container } from './container'
 export { default as Button } from './button'
 export { default as Head } from './head'
 export { default as Header } from './header'
 export { default as Footer } from './footer'
-
-export const wrapRootElement = ({ element }) =>
-  <ColorModeProvider initialColorMode='light'>
-    {element}
-  </ColorModeProvider>
-
-// backwards compatibility
-export const useTheme = () => {
-  const [ mode, setMode ] = useColorMode()
-  return { mode, setMode }
-}
-
-// backwards compatibility
-export { default as ComponentProvider } from './provider'

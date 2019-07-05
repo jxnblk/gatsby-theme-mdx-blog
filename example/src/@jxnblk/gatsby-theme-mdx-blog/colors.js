@@ -3,7 +3,7 @@
 // console.log(colors)
 
 import colors from '@jxnblk/gatsby-theme-mdx-blog/src/colors'
-import get from 'lodash.get'
+import { get } from 'theme-ui'
 
 // Colors for the theme can be configured by shadowing this file
 export default {

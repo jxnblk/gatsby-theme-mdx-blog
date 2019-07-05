@@ -1,15 +1,10 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { css, Box, Styled } from 'theme-ui'
-import Container from './container'
+import { css, Container, Styled } from 'theme-ui'
 
 export default props => {
   return (
-    <Box
-      as='header'
-      css={css({
-        variant: 'layout.header'
-      })}>
+    <header>
       <Container>
         <Styled.h3
           css={css({
@@ -26,6 +21,6 @@ export default props => {
           </Link>
         </Styled.h3>
       </Container>
-    </Box>
+    </header>
   )
 }
