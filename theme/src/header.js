@@ -10,6 +10,7 @@ export default props => {
           maxWidth: 'container',
           mx: 'auto',
           px: 3,
+          py: 2,
         }}>
         <Styled.h3
           sx={{

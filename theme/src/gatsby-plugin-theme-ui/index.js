@@ -1,8 +1,7 @@
-import merge from 'lodash.merge'
 import colors from './colors'
 import styles from './styles'
 
-const theme = merge({}, typography, {
+const theme = {
   initialColorMode: 'light',
   colors,
   fonts: {
@@ -23,6 +22,6 @@ const theme = merge({}, typography, {
     container: 768,
   },
   styles,
-})
+}
 
 export default theme

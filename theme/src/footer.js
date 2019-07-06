@@ -8,6 +8,7 @@ export default props =>
         maxWidth: 'container',
         mx: 'auto',
         px: 3,
+        py: 3,
       }}>
       © 2019 Jxnblk
     </div>

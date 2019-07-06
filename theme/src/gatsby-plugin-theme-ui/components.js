@@ -1,4 +1,5 @@
-import React from 'react'
+/** @jsx jsx */
+import { jsx } from 'theme-ui'
 
 const heading = Tag => ({ id, ...props }) => !id
   ? <Tag {...props} />
@@ -6,7 +7,7 @@ const heading = Tag => ({ id, ...props }) => !id
     <Tag id={id} {...props}>
       <a
         href={'#' + id}
-        css={{
+        sx={{
           color: 'inherit',
           textDecoration: 'none',
         }}>
