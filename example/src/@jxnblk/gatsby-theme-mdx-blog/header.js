@@ -38,13 +38,13 @@ export default props => {
                 color: 'primary',
               }
             }}>
-            Custom Header
+            MDX Blog Theme
           </Styled.a>
         </Styled.h3>
         <div sx={{ mx: 2 }} />
         <Styled.a
           as={Link}
-          to='/blog'
+          to='/about'
           sx={{
             color: 'inherit',
             textDecoration: 'none',
@@ -53,7 +53,7 @@ export default props => {
               color: 'primary',
             }
           }}>
-          Blog
+          About
         </Styled.a>
         <div sx={{ mx: 'auto' }} />
         <Button onClick={cycle}>
