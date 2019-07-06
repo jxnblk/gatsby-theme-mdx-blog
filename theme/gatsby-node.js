@@ -17,7 +17,7 @@ exports.onPreBootstrap = ({ store }) => {
 
 exports.onCreateNode = ({ node, actions, getNode }, opts = {}) => {
   const {
-    name = 'blog'
+    name = ''
   } = opts
   if (node.internal.type !== 'Mdx') return
 

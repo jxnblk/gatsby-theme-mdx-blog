@@ -21,7 +21,7 @@ export default props => {
   }
 
   return (
-    <Box as='header' sx={{ variant: 'layout.header' }}>
+    <header sx={{ variant: 'layout.header' }}>
       <Container
         css={{
           display: 'flex',
@@ -44,7 +44,7 @@ export default props => {
             Custom Header
           </Styled.a>
         </Styled.h3>
-        <Box sx={{ mx: 2 }} />
+        <div sx={{ mx: 2 }} />
         <Styled.a
           as={Link}
           to='/blog'
@@ -58,11 +58,11 @@ export default props => {
           }}>
           Blog
         </Styled.a>
-        <Box sx={{ mx: 'auto' }} />
+        <div sx={{ mx: 'auto' }} />
         <Button onClick={cycle}>
           {mode}
         </Button>
       </Container>
-    </Box>
+    </header>
   )
 }
