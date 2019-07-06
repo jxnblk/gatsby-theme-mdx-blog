@@ -1,31 +1,25 @@
-import React from 'react'
+/** @jsx jsx */
 import { Link } from 'gatsby'
-import { css, Box, Styled } from 'theme-ui'
-import Container from './container'
+import { jsx, Container, Styled } from 'theme-ui'
 
 export default props => {
   return (
-    <Box
-      as='header'
-      css={css({
-        variant: 'layout.header'
-      })}>
+    <header>
       <Container>
         <Styled.h3
-          css={css({
+          sx={{
             my: 0
-          })}>
+          }}>
           <Link
             to='/'
-            css={{
+            sx={{
               color: 'inherit',
               textDecoration: 'none',
-            }}
-          >
+            }}>
             Minimal Blog
           </Link>
         </Styled.h3>
       </Container>
-    </Box>
+    </header>
   )
 }

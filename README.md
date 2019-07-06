@@ -1,1 +1,1 @@
-@jxnblk/gatsby-theme-mdx-blog/README.md
+theme/README.md

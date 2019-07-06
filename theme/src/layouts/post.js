@@ -1,6 +1,5 @@
 import React from 'react'
-import { css, Styled, Main } from 'theme-ui'
-import Container from '../container'
+import { css, Styled, Container, Main } from 'theme-ui'
 import Head from '../head'
 import Root from '../root'
 import Header from '../header'

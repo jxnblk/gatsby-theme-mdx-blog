@@ -1,13 +1,8 @@
+/** @jsx jsx */
 import React from 'react'
 import { Link } from 'gatsby'
-import css from '@styled-system/css'
-import {
-  useTheme,
-  Styled,
-  Container,
-  Box,
-  Button,
-} from '@jxnblk/gatsby-theme-mdx-blog'
+import { jsx, Container, Styled, useColorMode } from 'theme-ui'
+import { Button } from '@jxnblk/gatsby-theme-mdx-blog'
 
 const modes = [
   'light',
@@ -15,8 +10,7 @@ const modes = [
 ]
 
 export default props => {
-  const { mode, setMode } = useTheme()
-  if (!mode) setMode('light')
+  const [ mode, setMode ] = useColorMode()
 
   const cycle = () => {
     const i = (modes.indexOf(mode) + 1) % modes.length
@@ -24,48 +18,48 @@ export default props => {
   }
 
   return (
-    <Box as='header' css={css({ variant: 'layout.header' })}>
+    <header sx={{ variant: 'layout.header' }}>
       <Container
         css={{
           display: 'flex',
           alignItems: 'center',
         }}>
         <Styled.h3
-          css={css({
+          sx={{
             fontSize: 2,
             m: 0,
-          })}>
+          }}>
           <Styled.a as={Link} to='/'
-            css={css({
+            sx={{
               color: 'inherit',
               textDecoration: 'none',
               fontWeight: 'bold',
               '&:hover': {
                 color: 'primary',
               }
-            })}>
-            Custom Header
+            }}>
+            MDX Blog Theme
           </Styled.a>
         </Styled.h3>
-        <Box mx={2} />
+        <div sx={{ mx: 2 }} />
         <Styled.a
           as={Link}
-          to='/blog'
-          css={css({
+          to='/about'
+          sx={{
             color: 'inherit',
             textDecoration: 'none',
             fontWeight: 'bold',
             '&:hover': {
               color: 'primary',
             }
-          })}>
-          Blog
+          }}>
+          About
         </Styled.a>
-        <Box mx='auto' />
+        <div sx={{ mx: 'auto' }} />
         <Button onClick={cycle}>
           {mode}
         </Button>
       </Container>
-    </Box>
+    </header>
   )
 }

@@ -17,7 +17,7 @@ exports.onPreBootstrap = ({ store }) => {
 
 exports.onCreateNode = ({ node, actions, getNode }, opts = {}) => {
   const {
-    name = 'blog'
+    name = ''
   } = opts
   if (node.internal.type !== 'Mdx') return
 
@@ -34,7 +34,7 @@ exports.createPages = async ({
   actions,
 }, opts = {}) => {
   const {
-    name = 'blog',
+    name = '',
     pageSize = 12,
   } = opts
 
