@@ -1,11 +1,17 @@
 /** @jsx jsx */
+import { jsx, Styled } from 'theme-ui'
 import { Link } from 'gatsby'
-import { jsx, Container, Styled } from 'theme-ui'
 
 export default props => {
   return (
     <header>
-      <Container>
+      <div
+        sx={{
+          maxWidth: 'container',
+          mx: 'auto',
+          px: 3,
+          py: 2,
+        }}>
         <Styled.h3
           sx={{
             my: 0
@@ -19,7 +25,7 @@ export default props => {
             Minimal Blog
           </Link>
         </Styled.h3>
-      </Container>
+      </div>
     </header>
   )
 }

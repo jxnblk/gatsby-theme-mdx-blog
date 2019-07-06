@@ -1,5 +1,5 @@
-import React from 'react'
-import { Container } from 'theme-ui'
+/** @jsx jsx */
+import { jsx } from 'theme-ui'
 import {
   Root,
   Header,
@@ -8,7 +8,13 @@ import {
 export default props =>
   <Root>
     <Header />
-    <Container>
+    <div
+      sx={{
+        maxWidth: 'container',
+        mx: 'auto',
+        px: 3,
+        py: 4,
+      }}>
       {props.children}
-    </Container>
+    </div>
   </Root>

@@ -1,8 +1,4 @@
-export {
-  css,
-  Styled,
-  useColorMode,
-} from 'theme-ui'
+export { useColorMode } from 'theme-ui'
 export { default as Root } from './root'
 export { default as Button } from './button'
 export { default as Head } from './head'

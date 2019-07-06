@@ -28,7 +28,6 @@
     "gatsby-plugin-react-helmet": "^3.0.11",
     "gatsby-plugin-theme-ui": "^0.2.6",
     "gatsby-source-filesystem": "^2.0.28",
-    "lodash.merge": "^4.6.1",
     "mkdirp": "^0.5.1",
     "react-helmet": "^5.2.0",
     "remark-slug": "^5.1.1",

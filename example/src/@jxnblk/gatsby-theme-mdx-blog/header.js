@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import React from 'react'
 import { Link } from 'gatsby'
-import { jsx, Container, Styled, useColorMode } from 'theme-ui'
+import { jsx, Styled, useColorMode } from 'theme-ui'
 import { Button } from '@jxnblk/gatsby-theme-mdx-blog'
 
 const modes = [
@@ -19,10 +19,14 @@ export default props => {
 
   return (
     <header sx={{ variant: 'layout.header' }}>
-      <Container
-        css={{
+      <div
+        sx={{
           display: 'flex',
           alignItems: 'center',
+          maxWidth: 'container',
+          mx: 'auto',
+          px: 3,
+          py: 2,
         }}>
         <Styled.h3
           sx={{
@@ -59,7 +63,7 @@ export default props => {
         <Button onClick={cycle}>
           {mode}
         </Button>
-      </Container>
+      </div>
     </header>
   )
 }

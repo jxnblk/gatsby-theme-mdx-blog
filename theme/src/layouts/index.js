@@ -1,6 +1,6 @@
-import React from 'react'
+/** @jsx jsx */
+import { jsx, Styled, Main } from 'theme-ui'
 import { Link } from 'gatsby'
-import { css, Styled, Container, Box, Main } from 'theme-ui'
 import Head from '../head'
 import Root from '../root'
 import Header from '../header'
@@ -17,12 +17,14 @@ export default props => {
       <Head />
       <Header />
       <Main>
-        <Container
-          css={css({
-            variant: 'layout.container',
-          })}>
+        <div
+          sx={{
+            maxWidth: 'container',
+            mx: 'auto',
+            px: 3,
+          }}>
           <ul
-            css={{
+            sx={{
               listStyle: 'none',
               padding: 0,
               margin: 0
@@ -31,24 +33,24 @@ export default props => {
               <li key={post.id}>
                 <Link
                   to={post.slug}
-                  css={{
+                  sx={{
                     display: 'block',
                     textDecoration: 'none',
                     color: 'inherit',
                   }}
                 >
                   <Styled.h2
-                    css={css({
+                    sx={{
                       fontSize: [5, 6]
-                    })}>
+                    }}>
                     {post.title}
                   </Styled.h2>
                   <Styled.p
-                    css={css({
+                    sx={{
                       mb: 4,
                       fontSize: [0, 0],
                       fontWeight: 'bold',
-                    })}>
+                    }}>
                     {post.date}
                   </Styled.p>
                   <Styled.p>
@@ -58,8 +60,8 @@ export default props => {
               </li>
             ))}
           </ul>
-          <Box
-            css={{
+          <div
+            sx={{
               display: 'flex',
             }}
             py={4}>
@@ -67,31 +69,31 @@ export default props => {
               <Styled.a
                 as={Link}
                 to={previous}
-                css={css({
+                sx={{
                   fontSize: 4,
                   fontWeight: 'bold',
                   color: 'inherit',
                   textDecoration: 'none',
-                })}>
+                }}>
                 Previous
               </Styled.a>
             )}
-            <Box m='auto' />
+            <div sx={{ m: 'auto' }} />
             {next && (
               <Styled.a
                 as={Link}
                 to={next}
-                css={css({
+                sx={{
                   fontSize: 4,
                   fontWeight: 'bold',
                   color: 'inherit',
                   textDecoration: 'none',
-                })}>
+                }}>
                 Next
               </Styled.a>
             )}
-          </Box>
-        </Container>
+          </div>
+        </div>
       </Main>
       <Footer />
     </Root>
