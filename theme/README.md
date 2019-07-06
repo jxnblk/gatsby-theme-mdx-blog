@@ -122,4 +122,6 @@ module.exports = {
 - `path`: path for source folder of MDX blog posts, default `src/posts`
 - `pageSize`: number of posts to display per page
 
+:warning: if you change the `path`, make sure you have content already since gatsby relies on having content to generate the frontmatter properly.
+
 MIT License
