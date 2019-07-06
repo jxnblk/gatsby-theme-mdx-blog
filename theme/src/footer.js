@@ -1,9 +1,14 @@
-import React from 'react'
-import { Container } from 'theme-ui'
+/** @jsx jsx */
+import { jsx } from 'theme-ui'
 
 export default props =>
   <footer>
-    <Container>
+    <div
+      sx={{
+        maxWidth: 'container',
+        mx: 'auto',
+        px: 3,
+      }}>
       © 2019 Jxnblk
-    </Container>
+    </div>
   </footer>

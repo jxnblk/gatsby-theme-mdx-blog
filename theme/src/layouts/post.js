@@ -1,5 +1,5 @@
-import React from 'react'
-import { css, Styled, Container, Main } from 'theme-ui'
+/** @jsx jsx */
+import { jsx, Styled, Main } from 'theme-ui'
 import Head from '../head'
 import Root from '../root'
 import Header from '../header'
@@ -14,22 +14,24 @@ export default props => {
       />
       <Header />
       <Main>
-        <Container
-          css={css({
-            variant: 'layout.container',
-          })}>
+        <div
+          sx={{
+            maxWidth: 'container',
+            mx: 'auto',
+            px: 3,
+          }}>
           <Styled.h1>
             {props.title}
           </Styled.h1>
           <Styled.p
-            css={css({
+            sx={{
               fontSize: [0, 0],
               fontWeight: 'bold',
-            })}>
+            }}>
             {props.date}
           </Styled.p>
           {props.children}
-        </Container>
+        </div>
       </Main>
       <Footer />
     </Root>

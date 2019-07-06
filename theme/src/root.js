@@ -1,14 +1,14 @@
-import React from 'react'
-import { css, Layout } from 'theme-ui'
+/** @jsx jsx */
+import { jsx, Layout } from 'theme-ui'
 
 export const Root = props =>
   <Layout
     {...props}
-    css={css({
+    sx={{
       fontFamily: 'body',
       fontWeight: 'body',
       lineHeight: 'body',
-    })}
+    }}
   />
 
 export default Root
