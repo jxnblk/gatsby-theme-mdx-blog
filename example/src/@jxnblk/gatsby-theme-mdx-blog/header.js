@@ -2,10 +2,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { jsx, Container, Styled, useColorMode } from 'theme-ui'
-import {
-  Box,
-  Button,
-} from '@jxnblk/gatsby-theme-mdx-blog'
+import { Button } from '@jxnblk/gatsby-theme-mdx-blog'
 
 const modes = [
   'light',

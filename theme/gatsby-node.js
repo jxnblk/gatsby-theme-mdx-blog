@@ -34,7 +34,7 @@ exports.createPages = async ({
   actions,
 }, opts = {}) => {
   const {
-    name = 'blog',
+    name = '',
     pageSize = 12,
   } = opts
 
