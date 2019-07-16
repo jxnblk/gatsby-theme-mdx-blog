@@ -1,0 +1,27 @@
+{
+  "name": "gatsby-theme-jxnblk",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "gatsby develop"
+  },
+  "devDependencies": {
+    "gatsby": "^2.13.23",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.13.23",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.14",
+    "@theme-ui/presets": "^0.2.10",
+    "gatsby-plugin-catch-links": "^2.1.2",
+    "gatsby-plugin-theme-ui": "^0.2.6",
+    "gatsby-theme-blank": "^0.0.2",
+    "theme-ui": "^0.2.14"
+  }
+}
